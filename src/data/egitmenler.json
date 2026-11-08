@@ -1,0 +1,50 @@
+[
+ {
+  "slug": "elif-demirtas",
+  "ad": "Elif Demirtaş",
+  "brans": "Resim",
+  "unvan": "Yağlıboya ve suluboya eğitmeni",
+  "bio": "Işık ve renk üzerine çalışan ressam. Manzara ve doğadan çalışmayı sever, öğrencilerini kendi görsel dillerini bulmaya teşvik eder.",
+  "deneyim": "12 yıl"
+ },
+ {
+  "slug": "zeynep-kaya",
+  "ad": "Zeynep Kaya",
+  "brans": "Resim",
+  "unvan": "Konuk sanatçı",
+  "bio": "Ege peyzajlarını yağlıboya ile işleyen sanatçı. Her dönem seçili atölyelerde konuk olarak yer alır.",
+  "deneyim": "11 yıl"
+ },
+ {
+  "slug": "selin-yurt",
+  "ad": "Selin Yurt",
+  "brans": "Seramik",
+  "unvan": "Çark ve sır eğitmeni",
+  "bio": "Çarkta form çekme ve sır kimyası üzerine uzmanlaşmış seramik sanatçısı. Başlangıç gruplarıyla çalışmayı tercih eder.",
+  "deneyim": "9 yıl"
+ },
+ {
+  "slug": "ayse-tunc",
+  "ad": "Ayşe Tunç",
+  "brans": "Seramik",
+  "unvan": "El şekillendirme eğitmeni",
+  "bio": "Anadolu çömlekçiliği geleneğini çağdaş formlarla buluşturan seramik sanatçısı.",
+  "deneyim": "15 yıl"
+ },
+ {
+  "slug": "can-erdem",
+  "ad": "Can Erdem",
+  "brans": "Heykel",
+  "unvan": "Modelaj ve bronz eğitmeni",
+  "bio": "Figüratif ve soyut heykel çalışan sanatçı. Portre modelajı ve bronz döküm süreçlerinde deneyimlidir.",
+  "deneyim": "14 yıl"
+ },
+ {
+  "slug": "burak-cinar",
+  "ad": "Burak Çınar",
+  "brans": "Heykel",
+  "unvan": "Taş ve metal eğitmeni",
+  "bio": "Taş oyma ve metal kaynak teknikleriyle çalışan heykeltıraş. Atölyelerinde güvenli çalışma alışkanlığını ilk sıraya koyar.",
+  "deneyim": "10 yıl"
+ }
+]

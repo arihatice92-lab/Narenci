@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Duyuru Yönetimi | Narenci Yönetim</title>
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/fonts/themify-icons.css">
+	<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-govde">
+	<a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+	<div class="admin-kabuk">
+		<aside class="yan-menu" id="yan-menu" aria-label="Yönetim menüsü">
+			<a class="yan-marka" href="panel.html"><span class="brand-mark" aria-hidden="true"></span><span><b>Narenci</b><small>Yönetim Paneli</small></span></a>
+			<ul class="yan-liste">
+<li><a href="panel.html"><span class="ti-dashboard" aria-hidden="true"></span>Panel</a></li>
+<li><a href="duyuru-ekle.html" class="aktif" aria-current="page"><span class="ti-announcement" aria-hidden="true"></span>Duyurular</a></li>
+<li><a href="eserler.html"><span class="ti-gallery" aria-hidden="true"></span>Eserler</a></li>
+<li><a href="atolyeler.html"><span class="ti-brush-alt" aria-hidden="true"></span>Atölyeler</a></li>
+<li><a href="mesajlar.html"><span class="ti-email" aria-hidden="true"></span>Mesajlar</a></li>
+<li><a href="istatistik.html"><span class="ti-bar-chart" aria-hidden="true"></span>İstatistik</a></li>
+			</ul>
+			<div class="yan-alt">
+				<a href="../index.html" target="_blank" rel="noopener"><span class="ti-world" aria-hidden="true"></span>Siteyi Gör</a>
+				<a href="giris.html"><span class="ti-power-off" aria-hidden="true"></span>Çıkış</a>
+			</div>
+		</aside>
+		<div class="admin-sag">
+			<header class="ust-cubuk">
+				<button type="button" class="menu-dugme" id="menu-dugme" aria-controls="yan-menu" aria-expanded="false" aria-label="Menüyü aç/kapat"><span class="ti-menu" aria-hidden="true"></span></button>
+				<h1>Duyuru Yönetimi</h1>
+				<div class="kullanici"><span class="avatar" aria-hidden="true">Y</span><span class="kullanici-ad">Yönetici <small>(demo)</small></span></div>
+			</header>
+			<main id="icerik" class="admin-icerik">
+				<div class="demo-not" role="note"><strong>Arayüz tasarımı:</strong> Bu sayfa yalnızca tasarım amaçlıdır; girilen bilgiler sunucuya kaydedilmez.</div>
+
+<section class="kart" aria-labelledby="kayit-baslik">
+	<h2 id="kayit-baslik">Yeni duyuru ekle</h2>
+	<div class="duzenleme-bandi" id="duzenleme-bandi"><strong></strong> düzenleniyor. <button type="button" class="btn-ikon" id="duzenleme-iptal">Vazgeç</button></div>
+	<form data-yonetim novalidate>
+		<div class="form-satir">
+			<div class="alan"><label for="d-baslik">Başlık <span class="zorunlu" aria-hidden="true">*</span></label><input type="text" id="d-baslik" name="baslik" required maxlength="90"></div>
+			<div class="alan"><label for="d-etiket">Etiket</label><select id="d-etiket" name="etiket"><option>Sergi</option><option>Atölye</option><option>Duyuru</option><option>Etkinlik</option></select></div>
+			<div class="alan"><label for="d-tarih">Yayın tarihi <span class="zorunlu" aria-hidden="true">*</span></label><input type="date" id="d-tarih" name="tarih" required></div>
+		</div>
+		<div class="alan"><label for="d-ozet">Kısa özet <span class="zorunlu" aria-hidden="true">*</span></label><textarea id="d-ozet" name="ozet" required maxlength="160" data-sayac="#ozet-say" style="min-height:80px"></textarea><div class="sayac" id="ozet-say" aria-live="polite"></div></div>
+		<div class="alan"><label for="d-icerik">Duyuru metni <span class="zorunlu" aria-hidden="true">*</span></label><textarea id="d-icerik" name="icerik" required></textarea></div>
+		<div class="alan"><span class="etiket" id="d-dosya-et">Ek dosya (PDF, Word veya görsel)</span>
+			<div class="dosya-alani"><input type="file" id="d-dosya" aria-labelledby="d-dosya-et" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.webp" data-onizleme="#d-onizleme" data-hata="#d-hata" data-turler="pdf,doc,docx,jpg,jpeg,png,webp" data-mb="5">
+			<div class="ipucu">En çok 5 MB. İzin verilen türler: PDF, DOC, DOCX, JPG, PNG, WEBP.</div><div class="hata-metin" id="d-hata" role="alert"></div><div class="onizleme" id="d-onizleme"></div></div></div>
+		<div class="alan"><label class="anahtar"><input type="checkbox" name="yayinda" checked> <span>Hemen yayınla</span></label></div>
+		<div class="hizli"><button type="submit" class="btn btn-birincil">Kaydet</button><button type="button" class="btn btn-ikincil" id="onizle-btn">Önizle</button><button type="reset" class="btn btn-ikincil">Temizle</button></div>
+	</form>
+</section>
+<section class="kart" aria-labelledby="d-liste-b">
+	<div class="kart-ust"><h2 id="d-liste-b">Mevcut duyurular</h2><input type="search" class="arama" placeholder="Duyuru ara…" aria-label="Duyuru ara" data-ara="#d-tablo" data-bos="#d-bos"></div>
+	<div class="tablo-kap"><table class="tablo" id="d-tablo"><caption class="visually-hidden">Duyurular (yeniden eskiye)</caption>
+		<thead><tr><th scope="col">Tarih</th><th scope="col">Başlık</th><th scope="col">Etiket</th><th scope="col">Durum</th><th scope="col"><span class="visually-hidden">İşlemler</span></th></tr></thead>
+		<tbody>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Kış dönemi atölye kayıtları başladı&quot;, &quot;etiket&quot;: &quot;Atölye&quot;, &quot;tarih&quot;: &quot;2026-11-05&quot;, &quot;ozet&quot;: &quot;Resim, seramik ve heykel atölyelerinde yeni dönem kayıtları 5 Kasım&#x27;da açıldı.&quot;, &quot;icerik&quot;: &quot;Kış dönemi atölyelerimizin kayıtları başladı. Resim, seramik ve heykel dallarında toplam 12 yeni grup açıyoruz; gruplar en fazla 10 kişiyle sınırlı.\n\nÖn kayıt için Atölyeler sayfasındaki formu doldurmanız yeterli. Erken kayıt yaptıranlara ilk ay malzeme desteği sağlanacaktır.&quot;}" data-ad="Kış dönemi atölye kayıtları başladı"><td>5 Kas 2026</td><td><strong>Kış dönemi atölye kayıtları başladı</strong></td><td><span class="rozet">Atölye</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Cumhuriyet&#x27;in 103. yılına özel “Anadolu Kilinden” seramik sergisi&quot;, &quot;etiket&quot;: &quot;Sergi&quot;, &quot;tarih&quot;: &quot;2026-10-28&quot;, &quot;ozet&quot;: &quot;29 Ekim&#x27;de açılacak seramik sergisi Sergi Salonu&#x27;nda bir ay boyunca ziyarete açık.&quot;, &quot;icerik&quot;: &quot;Anadolu&#x27;nun farklı bölgelerinden kil ve geleneksel tekniklerle üretilen 40 seramik eser “Anadolu Kilinden” başlığıyla sergilenecek.\n\nAçılış 29 Ekim saat 15.00&#x27;te yapılacaktır. Giriş ücretsizdir; sergi bir ay boyunca salı-pazar günleri gezilebilir.&quot;}" data-ad="Cumhuriyet&#x27;in 103. yılına özel “Anadolu Kilinden” seramik sergisi"><td>28 Eki 2026</td><td><strong>Cumhuriyet&#x27;in 103. yılına özel “Anadolu Kilinden” seramik sergisi</strong></td><td><span class="rozet">Sergi</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Genç sanatçılar resim yarışması başvuruları başladı&quot;, &quot;etiket&quot;: &quot;Etkinlik&quot;, &quot;tarih&quot;: &quot;2026-10-18&quot;, &quot;ozet&quot;: &quot;18-30 yaş arası sanatseverler için resim yarışması başvuruları 30 Kasım&#x27;a kadar açık.&quot;, &quot;icerik&quot;: &quot;Bu yıl “Işık” temasıyla düzenlenen yarışmaya 18-30 yaş arası herkes katılabilir. Teknik serbesttir, eser boyutu en fazla 70 × 100 cm olmalıdır.\n\nDereceye giren üç eser Sergi Salonu&#x27;nda sergilenecek ve ödüllendirilecektir. Başvuru kuralları ve takvim eklidir.&quot;}" data-ad="Genç sanatçılar resim yarışması başvuruları başladı"><td>18 Eki 2026</td><td><strong>Genç sanatçılar resim yarışması başvuruları başladı</strong></td><td><span class="rozet">Etkinlik</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Hafta sonu heykel modelaj atölyesi&quot;, &quot;etiket&quot;: &quot;Atölye&quot;, &quot;tarih&quot;: &quot;2026-10-09&quot;, &quot;ozet&quot;: &quot;Cumartesi günleri portre modelajı üzerine yoğun bir atölye düzenliyoruz.&quot;, &quot;icerik&quot;: &quot;Eğitmenimiz eşliğinde kil ile portre modelajının temellerini öğreneceğiniz iki günlük yoğun bir atölye.\n\nKontenjan 8 kişiyle sınırlıdır. Malzemeler atölye tarafından karşılanır.&quot;}" data-ad="Hafta sonu heykel modelaj atölyesi"><td>9 Eki 2026</td><td><strong>Hafta sonu heykel modelaj atölyesi</strong></td><td><span class="rozet">Atölye</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Sergi Salonu&#x27;nun ziyaret saatleri güncellendi&quot;, &quot;etiket&quot;: &quot;Duyuru&quot;, &quot;tarih&quot;: &quot;2026-09-30&quot;, &quot;ozet&quot;: &quot;Ekim ayından itibaren salı-pazar 10.00-19.00 arasında açığız.&quot;, &quot;icerik&quot;: &quot;Artan ilgi nedeniyle Sergi Salonu&#x27;nun ziyaret saatlerini genişlettik. Salı-pazar günleri 10.00-19.00 arasında kapımız açık.\n\nPazartesi günleri bakım ve yeni sergi kurulumları nedeniyle kapalıdır.&quot;}" data-ad="Sergi Salonu&#x27;nun ziyaret saatleri güncellendi"><td>30 Eyl 2026</td><td><strong>Sergi Salonu&#x27;nun ziyaret saatleri güncellendi</strong></td><td><span class="rozet">Duyuru</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Konuk sanatçı söyleşisi: Çömlekçilikte gelenek&quot;, &quot;etiket&quot;: &quot;Etkinlik&quot;, &quot;tarih&quot;: &quot;2026-09-21&quot;, &quot;ozet&quot;: &quot;Usta çömlekçi ile gelenekten bugüne çömlekçiliği konuşuyoruz.&quot;, &quot;icerik&quot;: &quot;Anadolu çömlekçiliğinin üç kuşaktır ustası olan konuğumuz, geleneksel tekniklerin bugünkü seramik sanatına etkisini anlatacak.\n\nSöyleşi sonrası çark başında kısa bir gösteri yapılacaktır. Katılım ücretsizdir.&quot;}" data-ad="Konuk sanatçı söyleşisi: Çömlekçilikte gelenek"><td>21 Eyl 2026</td><td><strong>Konuk sanatçı söyleşisi: Çömlekçilikte gelenek</strong></td><td><span class="rozet">Etkinlik</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Öğrencilere atölye ücretlerinde %20 indirim&quot;, &quot;etiket&quot;: &quot;Duyuru&quot;, &quot;tarih&quot;: &quot;2026-09-12&quot;, &quot;ozet&quot;: &quot;Geçerli öğrenci belgesi ile tüm atölyelerde %20 indirim uygulanır.&quot;, &quot;icerik&quot;: &quot;Sanatı herkes için ulaşılabilir kılmak amacıyla lise ve üniversite öğrencilerine tüm atölyelerde %20 indirim sağlıyoruz.\n\nİndirimden yararlanmak için kayıt sırasında geçerli öğrenci belgenizi ibraz etmeniz yeterlidir.&quot;}" data-ad="Öğrencilere atölye ücretlerinde %20 indirim"><td>12 Eyl 2026</td><td><strong>Öğrencilere atölye ücretlerinde %20 indirim</strong></td><td><span class="rozet">Duyuru</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Yeni dönem eğitmen kadrosu açıklandı&quot;, &quot;etiket&quot;: &quot;Duyuru&quot;, &quot;tarih&quot;: &quot;2026-09-01&quot;, &quot;ozet&quot;: &quot;Bu dönem aramıza katılan üç yeni eğitmenimizi tanıyın.&quot;, &quot;icerik&quot;: &quot;Resim, seramik ve heykel alanlarında deneyimli üç yeni eğitmen ekibimize katıldı.\n\nEğitmenlerimizin özgeçmişlerine Eğitmenler sayfasından ulaşabilirsiniz.&quot;}" data-ad="Yeni dönem eğitmen kadrosu açıklandı"><td>1 Eyl 2026</td><td><strong>Yeni dönem eğitmen kadrosu açıklandı</strong></td><td><span class="rozet">Duyuru</span></td><td><span class="rozet yesil">Yayında</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+		</tbody></table></div>
+	<p class="bos-not" id="d-bos" hidden>Eşleşen duyuru yok.</p>
+</section>
+<div class="modal fade" id="onizleModal" tabindex="-1" aria-labelledby="onizleBaslik" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+	<div class="modal-header"><div><span class="rozet" id="onizleEtiket"></span><h2 class="modal-title" id="onizleBaslik"></h2></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+	<div class="modal-body"><p id="onizleMetin" style="white-space:pre-line"></p></div></div></div></div>
+
+			</main>
+		</div>
+	</div>
+
+	<div class="toast-alani" id="toast-alani" role="status" aria-live="polite"></div>
+	<div class="modal fade" id="silModal" tabindex="-1" aria-labelledby="silBaslik" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+		<div class="modal-header"><h2 class="modal-title" id="silBaslik">Silmeyi onaylayın</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+		<div class="modal-body"><p id="silMetin">Bu kaydı silmek istediğinize emin misiniz?</p></div>
+		<div class="modal-footer"><button type="button" class="btn btn-ikincil" data-bs-dismiss="modal">Vazgeç</button><button type="button" class="btn btn-tehlike" id="silOnay">Evet, sil</button></div>
+	</div></div></div>
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="../assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg data-zoom="260 170 380 295" xmlns="http://www.w3.org/2000/svg" viewBox="260 170 380 295" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Soyut bronz anka heykeli (örnek illüstrasyon)"><defs><radialGradient id="sp" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#fff2cf" stop-opacity=".55"/><stop offset="1" stop-color="#fff2cf" stop-opacity="0"/></radialGradient>
+<linearGradient id="br" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3c071"/><stop offset=".55" stop-color="#b5542f"/><stop offset="1" stop-color="#6d2f1b"/></linearGradient>
+<linearGradient id="mr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#bdb5aa"/></linearGradient></defs>
+<rect width="900" height="700" fill="#2b2623"/><polygon points="450,0 250,640 650,640" fill="url(#sp)"/>
+<rect x="0" y="640" width="900" height="60" fill="#1c1917"/>
+<rect x="340" y="450" width="220" height="190" fill="#efe6da"/><rect x="326" y="436" width="248" height="20" fill="#f7f3ec"/><path d="M450 436 C372 396 362 312 424 262 C468 226 524 242 524 290 C524 338 474 346 486 382 C494 406 528 392 556 360 C548 412 504 442 450 436Z" fill="url(#br)"/><path d="M430 270 C405 220 430 180 470 160 C455 190 462 220 490 245Z" fill="url(#br)"/><path d="M505 262 C540 232 575 236 600 214 C592 252 560 278 520 290Z" fill="url(#br)"/>
+<ellipse cx="450" cy="643" rx="150" ry="9" fill="#000" opacity=".35"/></svg>

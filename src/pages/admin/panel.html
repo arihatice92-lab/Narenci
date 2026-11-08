@@ -1,0 +1,20 @@
+---
+layout: admin
+aktif: panel
+grafik: 1
+title: Panel | Narenci Yönetim
+baslik: Genel Bakış
+---
+<div class="izgara dort" style="margin-bottom:24px">
+	<div class="ist-kart"><strong>{{admin_eser_sayisi}}</strong><span>Yayındaki eser (örnek liste)</span></div>
+	<div class="ist-kart altin"><strong>{{admin_atolye_sayisi}}</strong><span>Açık atölye</span></div>
+	<div class="ist-kart sage"><strong>{{admin_yeni_mesaj}}</strong><span>Yeni mesaj</span></div>
+	<div class="ist-kart koyu"><strong>{{sayac_katilimci}}</strong><span>Toplam katılımcı</span></div>
+</div>
+<div class="izgara iki">
+	<section class="kart" aria-labelledby="p-g1"><h2 id="p-g1">Aylık ön kayıtlar</h2><div class="grafik-kutu"><canvas id="g-onkayit" role="img" aria-label="Ocak–Ekim aylık ön kayıt sayıları sütun grafiği"></canvas></div></section>
+	<section class="kart" aria-labelledby="p-g2"><h2 id="p-g2">Dallara göre dağılım</h2><div class="grafik-kutu"><canvas id="g-dal" role="img" aria-label="Resim, seramik, heykel dağılımı halka grafiği"></canvas></div></section>
+</div>
+<section class="kart" aria-labelledby="p-h"><h2 id="p-h">Hızlı işlemler</h2>
+	<div class="hizli"><a class="btn btn-birincil" href="duyuru-ekle.html">Duyuru ekle</a><a class="btn btn-ikincil" href="eserler.html">Eser ekle</a><a class="btn btn-ikincil" href="atolyeler.html">Atölye ekle</a><a class="btn btn-ikincil" href="istatistik.html">İstatistikleri düzenle</a></div></section>
+<script type="application/json" id="istatistik-veri">{{istatistik_json}}</script>

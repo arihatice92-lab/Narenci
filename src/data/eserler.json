@@ -1,0 +1,326 @@
+[
+ {
+  "slug": "narenci-isigi",
+  "kategori": "resim",
+  "baslik": "Narenci Işığı",
+  "sanatci": "Elif Demirtaş",
+  "yil": 2025,
+  "teknik": "Tuval üzerine yağlıboya",
+  "olcu": "90 × 70 cm",
+  "fiyat": 18500,
+  "ozet": "Gün batımının turuncu ışığında yağlıboya bir tarla manzarası.",
+  "aciklama": [
+   "Sanatçı, gün batımında tarlaların aldığı turuncu tonları kalın fırça darbeleriyle tuvale taşıyor. Önde sıralanan narenci ağaçları, sıcak bir ritim oluşturuyor.",
+   "Eser, Sergi Salonumuzun en çok ilgi gören resimlerinden biridir ve ahşap, altın varaklı çerçevesiyle birlikte teslim edilir."
+  ],
+  "ozel": [
+   [
+    "Çerçeve",
+    "Ahşap, altın varaklı"
+   ],
+   [
+    "Sertifika",
+    "Sanatçı imzalı özgünlük belgesi"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-narenci-isigi",
+  "alt": "Gün batımı manzarası yağlıboya tablo (örnek illüstrasyon)"
+ },
+ {
+  "slug": "mavi-saat",
+  "kategori": "resim",
+  "baslik": "Mavi Saat",
+  "sanatci": "Mert Aksoy",
+  "yil": 2024,
+  "teknik": "Tuval üzerine akrilik",
+  "olcu": "80 × 60 cm",
+  "fiyat": 14200,
+  "ozet": "Gece ile sabah arasındaki sessiz mavi anı anlatan akrilik çalışma.",
+  "aciklama": [
+   "Mavinin farklı tonlarıyla kurulan eser, ay ışığı altında uyuyan bir kıyı kasabasını anlatır.",
+   "Akrilik boyanın mat yüzeyi, çalışmaya sakin ve derin bir hava katar."
+  ],
+  "ozel": [
+   [
+    "Çerçeve",
+    "Siyah, ince profil"
+   ],
+   [
+    "Sertifika",
+    "Sanatçı imzalı özgünlük belgesi"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-mavi-saat",
+  "alt": "Mavi tonlarda gece manzarası (örnek illüstrasyon)"
+ },
+ {
+  "slug": "zeytin-bahcesi",
+  "kategori": "resim",
+  "baslik": "Zeytin Bahçesi",
+  "sanatci": "Zeynep Kaya",
+  "yil": 2025,
+  "teknik": "Tuval üzerine yağlıboya",
+  "olcu": "100 × 70 cm",
+  "fiyat": 21000,
+  "ozet": "Ege'nin zeytin bahçelerinden esinlenen, sıcak ve dingin bir manzara.",
+  "aciklama": [
+   "Öğleden sonra ışığında sarıya çalan bir bahçe, yuvarlak ağaç kümeleriyle sadeleştirilmiş biçimde işlenmiştir.",
+   "Zeynep Kaya'nın 'Toprak ve Işık' serisinin bir parçasıdır."
+  ],
+  "ozel": [
+   [
+    "Çerçeve",
+    "Doğal meşe"
+   ],
+   [
+    "Sertifika",
+    "Sanatçı imzalı özgünlük belgesi"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-zeytin-bahcesi",
+  "alt": "Zeytin ağaçlarının bulunduğu bahçe tablosu (örnek illüstrasyon)"
+ },
+ {
+  "slug": "kiyida-sabah",
+  "kategori": "resim",
+  "baslik": "Kıyıda Sabah",
+  "sanatci": "Elif Demirtaş",
+  "yil": 2026,
+  "teknik": "Kağıt üzerine suluboya",
+  "olcu": "60 × 45 cm",
+  "fiyat": 9800,
+  "ozet": "Pembe ve turkuvaz tonlarla bir deniz kıyısında sabah.",
+  "aciklama": [
+   "Suluboyanın şeffaflığı, gün doğarken denizin üzerindeki ince sis hissini yansıtır.",
+   "Eser, UV filtreli cam ve paspartu ile birlikte sunulur."
+  ],
+  "ozel": [
+   [
+    "Çerçeve",
+    "Beyaz paspartulu, camlı"
+   ],
+   [
+    "Sertifika",
+    "Sanatçı imzalı özgünlük belgesi"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-kiyida-sabah",
+  "alt": "Deniz kıyısında sabah suluboya (örnek illüstrasyon)"
+ },
+ {
+  "slug": "nar-vazo",
+  "kategori": "seramik",
+  "baslik": "Nar Vazo",
+  "sanatci": "Selin Yurt",
+  "yil": 2026,
+  "teknik": "Stoneware, parlak sır",
+  "olcu": "32 cm yükseklik",
+  "fiyat": 4800,
+  "ozet": "Nar biçiminden esinlenen, altın noktalarla bezeli kırmızı vazo.",
+  "aciklama": [
+   "Çarkta şekillendirilen vazo, nar meyvesinin taç yapraklarını boyun kısmında taşır.",
+   "İkinci pişirimde uygulanan altın detaylar elle işlenmiştir."
+  ],
+  "ozel": [
+   [
+    "Kullanım",
+    "Dekoratif, su geçirmez iç sır"
+   ],
+   [
+    "Bakım",
+    "Nemli bezle silin"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-nar-vazo",
+  "alt": "Nar biçimli kırmızı seramik vazo (örnek illüstrasyon)"
+ },
+ {
+  "slug": "kil-comlek",
+  "kategori": "seramik",
+  "baslik": "Kulplu Çömlek",
+  "sanatci": "Ayşe Tunç",
+  "yil": 2025,
+  "teknik": "Pişmiş toprak",
+  "olcu": "28 cm yükseklik",
+  "fiyat": 3600,
+  "ozet": "Geleneksel formlardan esinlenen, el yapımı kulplu çömlek.",
+  "aciklama": [
+   "Anadolu çömlekçiliğinin sade çizgilerini bugüne taşıyan çömlek, kazıma desenlerle süslenmiştir.",
+   "Her parça el yapımı olduğu için küçük farklılıklar gösterebilir."
+  ],
+  "ozel": [
+   [
+    "Kullanım",
+    "Dekoratif ve kuru gıda saklama"
+   ],
+   [
+    "Bakım",
+    "Sert deterjan kullanmayın"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-kil-comlek",
+  "alt": "Kulplu el yapımı kil çömlek (örnek illüstrasyon)"
+ },
+ {
+  "slug": "cini-tabak",
+  "kategori": "seramik",
+  "baslik": "Çini Desenli Tabak",
+  "sanatci": "Selin Yurt",
+  "yil": 2025,
+  "teknik": "El boyaması sırlı seramik",
+  "olcu": "40 cm çap",
+  "fiyat": 5400,
+  "ozet": "Kobalt mavisi ve terrakota çini motifleriyle duvar tabağı.",
+  "aciklama": [
+   "Klasik çini motiflerinin sadeleştirilmiş yorumu olan tabak, duvara asılabilir ya da standıyla sergilenebilir.",
+   "Mavi ve terrakota tonlar, mekâna sıcak bir akış katar."
+  ],
+  "ozel": [
+   [
+    "Kullanım",
+    "Duvar tabağı (askı aparatı dahil)"
+   ],
+   [
+    "Bakım",
+    "Kuru bezle silin"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-cini-tabak",
+  "alt": "Çini desenli seramik tabak (örnek illüstrasyon)"
+ },
+ {
+  "slug": "mat-surahi",
+  "kategori": "seramik",
+  "baslik": "Mat Sürahi",
+  "sanatci": "Ayşe Tunç",
+  "yil": 2026,
+  "teknik": "Mat sırlı porselen",
+  "olcu": "30 cm yükseklik",
+  "fiyat": 4100,
+  "ozet": "Mat beyaz yüzeyi ve koyu şeritleriyle minimal sürahi.",
+  "aciklama": [
+   "İnce porselenden üretilen sürahi, mat sırı ve iki koyu şeridiyle sade bir duruş sergiler.",
+   "Hem günlük kullanım hem de dekoratif amaçla tercih edilebilir."
+  ],
+  "ozel": [
+   [
+    "Kullanım",
+    "Gıda ile temasa uygun"
+   ],
+   [
+    "Bakım",
+    "Elde yıkama önerilir"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-mat-surahi",
+  "alt": "Mat beyaz seramik sürahi (örnek illüstrasyon)"
+ },
+ {
+  "slug": "anka",
+  "kategori": "heykel",
+  "baslik": "Anka",
+  "sanatci": "Can Erdem",
+  "yil": 2025,
+  "teknik": "Bronz",
+  "olcu": "45 cm yükseklik",
+  "fiyat": 32000,
+  "ozet": "Küllerinden doğan ankayı soyut formlarla anlatan bronz heykel.",
+  "aciklama": [
+   "Anka, yeniden doğuşun simgesidir. Sanatçı bu temayı akışkan bir gövde ve yukarı uzanan kanatlarla yorumlar.",
+   "Eser kaide ve sertifikası ile birlikte teslim edilir."
+  ],
+  "ozel": [
+   [
+    "Kaide",
+    "Mermer, dahil"
+   ],
+   [
+    "Sertifika",
+    "Numaralı ve imzalı (3/5)"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-anka",
+  "alt": "Soyut bronz anka heykeli (örnek illüstrasyon)"
+ },
+ {
+  "slug": "denge",
+  "kategori": "heykel",
+  "baslik": "Denge",
+  "sanatci": "Burak Çınar",
+  "yil": 2025,
+  "teknik": "Taş ve bronz",
+  "olcu": "38 cm yükseklik",
+  "fiyat": 19500,
+  "ozet": "Üst üste dengelenmiş taş formlarla sessiz bir denge çalışması.",
+  "aciklama": [
+   "Farklı malzemelerden oluşan taş katmanları, ağırlık ve hafiflik arasındaki ince çizgiyi anlatır.",
+   "Parçalar gizli bir mil ile birbirine sabitlenmiştir."
+  ],
+  "ozel": [
+   [
+    "Kaide",
+    "Opsiyonel, ayrıca satılır"
+   ],
+   [
+    "Sertifika",
+    "İmzalı özgünlük belgesi"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-denge",
+  "alt": "Üst üste dengelenmiş taşlardan heykel (örnek illüstrasyon)"
+ },
+ {
+  "slug": "dalga",
+  "kategori": "heykel",
+  "baslik": "Dalga",
+  "sanatci": "Derya Soylu",
+  "yil": 2026,
+  "teknik": "Beyaz mermer",
+  "olcu": "50 cm yükseklik",
+  "fiyat": 27500,
+  "ozet": "Dalganın kıvrılma anını donduran beyaz mermer heykel.",
+  "aciklama": [
+   "Tek parça mermerden oyulan heykel, dalganın en yüksek anındaki gerilimi taşır.",
+   "Işık altında yüzeydeki damarlar hareket hissini artırır."
+  ],
+  "ozel": [
+   [
+    "Kaide",
+    "Siyah granit, dahil"
+   ],
+   [
+    "Sertifika",
+    "İmzalı özgünlük belgesi"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-dalga",
+  "alt": "Mermer dalga heykeli (örnek illüstrasyon)"
+ },
+ {
+  "slug": "sarmal",
+  "kategori": "heykel",
+  "baslik": "Sarmal",
+  "sanatci": "Can Erdem",
+  "yil": 2024,
+  "teknik": "Bronz",
+  "olcu": "35 cm yükseklik",
+  "fiyat": 16800,
+  "ozet": "Sonsuz bir hareketi çağrıştıran sarmal biçimli bronz.",
+  "aciklama": [
+   "Sarmal, merkeze doğru akan bir enerji olarak yorumlanır. Bronzun sıcak patinası, ışıkla renk değiştirir.",
+   "Masa üstü ya da raf için uygundur."
+  ],
+  "ozel": [
+   [
+    "Kaide",
+    "Ahşap, dahil"
+   ],
+   [
+    "Sertifika",
+    "Numaralı ve imzalı (2/5)"
+   ]
+  ],
+  "gorsel": "assets/img/narenci/eser-sarmal",
+  "alt": "Sarmal biçimli bronz heykel (örnek illüstrasyon)"
+ }
+]

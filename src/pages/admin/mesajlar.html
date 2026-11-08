@@ -1,0 +1,21 @@
+---
+layout: admin
+aktif: mesaj
+title: Mesajlar | Narenci Yönetim
+baslik: Şikayet ve Öneri Kutusu
+---
+<section class="kart" aria-labelledby="m-b">
+	<div class="kart-ust"><h2 id="m-b">Gelen mesajlar</h2>
+		<div class="arama-satiri" style="margin:0"><input type="search" class="arama" placeholder="Ara…" aria-label="Mesaj ara" data-ara="#m-tablo" data-filtre="#m-tur" data-bos="#m-bos">
+		<select id="m-tur" class="arama" style="max-width:180px" aria-label="Türe göre filtrele"><option value="">Tüm türler</option><option>Bilgi talebi</option><option>Şikayet</option><option>Öneri</option><option>Teşekkür</option></select></div></div>
+	<div class="tablo-kap"><table class="tablo" id="m-tablo"><caption class="visually-hidden">İletişim formundan gelen mesajlar</caption>
+		<thead><tr><th scope="col">Tarih</th><th scope="col">Gönderen</th><th scope="col">Tür</th><th scope="col">Konu</th><th scope="col">Durum</th><th scope="col"><span class="visually-hidden">İşlemler</span></th></tr></thead>
+		<tbody>
+{{admin_mesaj_satirlari}}
+		</tbody></table></div>
+	<p class="bos-not" id="m-bos" hidden>Eşleşen mesaj yok.</p>
+</section>
+<div class="modal fade" id="mesajModal" tabindex="-1" aria-labelledby="mesajKonu" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+	<div class="modal-header"><div><small id="mesajMeta"></small><h2 class="modal-title" id="mesajKonu"></h2></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+	<div class="modal-body"><p><strong id="mesajKisi"></strong></p><p id="mesajMetin"></p></div>
+	<div class="modal-footer"><button type="button" class="btn btn-ikincil" data-bs-dismiss="modal">Kapat</button><button type="button" class="btn btn-birincil" id="mesaj-yanitla">Yanıtla</button></div></div></div></div>

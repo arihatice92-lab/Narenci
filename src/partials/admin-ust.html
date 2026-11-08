@@ -1,0 +1,19 @@
+	<div class="admin-kabuk">
+		<aside class="yan-menu" id="yan-menu" aria-label="Yönetim menüsü">
+			<a class="yan-marka" href="panel.html"><span class="brand-mark" aria-hidden="true"></span><span><b>{{name}}</b><small>Yönetim Paneli</small></span></a>
+			<ul class="yan-liste">
+{{admin_menu}}
+			</ul>
+			<div class="yan-alt">
+				<a href="{{root}}index.html" target="_blank" rel="noopener"><span class="ti-world" aria-hidden="true"></span>Siteyi Gör</a>
+				<a href="giris.html"><span class="ti-power-off" aria-hidden="true"></span>Çıkış</a>
+			</div>
+		</aside>
+		<div class="admin-sag">
+			<header class="ust-cubuk">
+				<button type="button" class="menu-dugme" id="menu-dugme" aria-controls="yan-menu" aria-expanded="false" aria-label="Menüyü aç/kapat"><span class="ti-menu" aria-hidden="true"></span></button>
+				<h1>{{sayfa_baslik}}</h1>
+				<div class="kullanici"><span class="avatar" aria-hidden="true">Y</span><span class="kullanici-ad">Yönetici <small>(demo)</small></span></div>
+			</header>
+			<main id="icerik" class="admin-icerik">
+				<div class="demo-not" role="note"><strong>Arayüz tasarımı:</strong> Bu sayfa yalnızca tasarım amaçlıdır; girilen bilgiler sunucuya kaydedilmez.</div>

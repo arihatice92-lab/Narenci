@@ -1,0 +1,32 @@
+[
+  {
+    "tur": "Öne Çıkan Eser",
+    "baslik": "Narenci Işığı",
+    "aciklama": "Gün batımının turuncu ışığında yağlıboya bir tarla manzarası. Sergi Salonumuzun en çok ilgi gören resimlerinden biri.",
+    "ozellikler": [["Teknik", "Tuval üzerine yağlıboya"], ["Ölçü", "90 × 70 cm"], ["Ücret", "18.500 ₺"]],
+    "href": "eser-narenci-isigi.html",
+    "buton": "Eser Detayı",
+    "gorsel": "assets/img/narenci/eser-tablo.svg",
+    "alt": "Gün batımı manzarasını gösteren çerçeveli yağlıboya tablo (örnek illüstrasyon)"
+  },
+  {
+    "tur": "Atölye",
+    "baslik": "Çarkta Seramik: Başlangıç",
+    "aciklama": "Kili tanıyın, çarkta ilk vazonuzu şekillendirin. Malzeme ve fırınlama dahil, küçük gruplarla uygulamalı bir atölye.",
+    "ozellikler": [["Süre", "8 hafta"], ["Seviye", "Başlangıç"], ["Ücret", "3.200 ₺"]],
+    "href": "atolye-carkta-seramik.html",
+    "buton": "Atölye Detayı",
+    "gorsel": "assets/img/narenci/atolye-seramik.svg",
+    "alt": "Rafta duran el yapımı seramik vazolar (örnek illüstrasyon)"
+  },
+  {
+    "tur": "Öne Çıkan Eser",
+    "baslik": "Anka",
+    "aciklama": "Küllerinden doğan ankayı soyut formlarla anlatan bronz heykel. Kaide ve sertifikası ile birlikte teslim edilir.",
+    "ozellikler": [["Malzeme", "Bronz"], ["Yükseklik", "45 cm"], ["Ücret", "32.000 ₺"]],
+    "href": "eser-anka.html",
+    "buton": "Eser Detayı",
+    "gorsel": "assets/img/narenci/heykel.svg",
+    "alt": "Kaide üzerinde duran soyut bronz heykel (örnek illüstrasyon)"
+  }
+]

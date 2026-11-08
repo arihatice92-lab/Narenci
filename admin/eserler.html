@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Eser Yönetimi | Narenci Yönetim</title>
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/fonts/themify-icons.css">
+	<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-govde">
+	<a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+	<div class="admin-kabuk">
+		<aside class="yan-menu" id="yan-menu" aria-label="Yönetim menüsü">
+			<a class="yan-marka" href="panel.html"><span class="brand-mark" aria-hidden="true"></span><span><b>Narenci</b><small>Yönetim Paneli</small></span></a>
+			<ul class="yan-liste">
+<li><a href="panel.html"><span class="ti-dashboard" aria-hidden="true"></span>Panel</a></li>
+<li><a href="duyuru-ekle.html"><span class="ti-announcement" aria-hidden="true"></span>Duyurular</a></li>
+<li><a href="eserler.html" class="aktif" aria-current="page"><span class="ti-gallery" aria-hidden="true"></span>Eserler</a></li>
+<li><a href="atolyeler.html"><span class="ti-brush-alt" aria-hidden="true"></span>Atölyeler</a></li>
+<li><a href="mesajlar.html"><span class="ti-email" aria-hidden="true"></span>Mesajlar</a></li>
+<li><a href="istatistik.html"><span class="ti-bar-chart" aria-hidden="true"></span>İstatistik</a></li>
+			</ul>
+			<div class="yan-alt">
+				<a href="../index.html" target="_blank" rel="noopener"><span class="ti-world" aria-hidden="true"></span>Siteyi Gör</a>
+				<a href="giris.html"><span class="ti-power-off" aria-hidden="true"></span>Çıkış</a>
+			</div>
+		</aside>
+		<div class="admin-sag">
+			<header class="ust-cubuk">
+				<button type="button" class="menu-dugme" id="menu-dugme" aria-controls="yan-menu" aria-expanded="false" aria-label="Menüyü aç/kapat"><span class="ti-menu" aria-hidden="true"></span></button>
+				<h1>Eser Yönetimi</h1>
+				<div class="kullanici"><span class="avatar" aria-hidden="true">Y</span><span class="kullanici-ad">Yönetici <small>(demo)</small></span></div>
+			</header>
+			<main id="icerik" class="admin-icerik">
+				<div class="demo-not" role="note"><strong>Arayüz tasarımı:</strong> Bu sayfa yalnızca tasarım amaçlıdır; girilen bilgiler sunucuya kaydedilmez.</div>
+
+<section class="kart" aria-labelledby="kayit-baslik">
+	<h2 id="kayit-baslik">Yeni eser ekle</h2>
+	<div class="duzenleme-bandi" id="duzenleme-bandi"><strong></strong> düzenleniyor. <button type="button" class="btn-ikon" id="duzenleme-iptal">Vazgeç</button></div>
+	<form data-yonetim novalidate>
+		<div class="form-satir">
+			<div class="alan"><label for="e-baslik">Eser adı <span class="zorunlu" aria-hidden="true">*</span></label><input type="text" id="e-baslik" name="baslik" required></div>
+			<div class="alan"><label for="e-sanatci">Sanatçı <span class="zorunlu" aria-hidden="true">*</span></label><input type="text" id="e-sanatci" name="sanatci" required></div>
+			<div class="alan"><label for="e-kategori">Kategori</label><select id="e-kategori" name="kategori"><option value="resim">Resim</option><option value="seramik">Seramik</option><option value="heykel">Heykel</option></select></div>
+		</div>
+		<div class="form-satir">
+			<div class="alan"><label for="e-yil">Yıl</label><input type="number" id="e-yil" name="yil" min="1900" max="2100"></div>
+			<div class="alan"><label for="e-teknik">Teknik</label><input type="text" id="e-teknik" name="teknik"></div>
+			<div class="alan"><label for="e-olcu">Ölçü</label><input type="text" id="e-olcu" name="olcu"></div>
+			<div class="alan"><label for="e-fiyat">Fiyat (₺) <span class="zorunlu" aria-hidden="true">*</span></label><input type="number" id="e-fiyat" name="fiyat" min="0" required></div>
+		</div>
+		<div class="alan"><label for="e-aciklama">Açıklama</label><textarea id="e-aciklama" name="aciklama"></textarea></div>
+		<div class="alan"><span class="etiket" id="e-dosya-et">Görseller (birden fazla seçilebilir)</span>
+			<div class="dosya-alani"><input type="file" id="e-dosya" multiple aria-labelledby="e-dosya-et" accept=".jpg,.jpeg,.png,.webp" data-onizleme="#e-onizleme" data-hata="#e-hata" data-turler="jpg,jpeg,png,webp" data-mb="5">
+			<div class="ipucu">JPG, PNG veya WEBP; her biri en çok 5 MB.</div><div class="hata-metin" id="e-hata" role="alert"></div><div class="onizleme" id="e-onizleme"></div></div></div>
+		<div class="hizli"><button type="submit" class="btn btn-birincil">Kaydet</button><button type="reset" class="btn btn-ikincil">Temizle</button></div>
+	</form>
+</section>
+<section class="kart" aria-labelledby="e-liste-b">
+	<div class="kart-ust"><h2 id="e-liste-b">Eser listesi</h2><input type="search" class="arama" placeholder="Eser veya sanatçı ara…" aria-label="Eser ara" data-ara="#e-tablo" data-bos="#e-bos"></div>
+	<div class="tablo-kap"><table class="tablo" id="e-tablo"><caption class="visually-hidden">Eserler</caption>
+		<thead><tr><th scope="col"><span class="visually-hidden">Görsel</span></th><th scope="col">Eser</th><th scope="col">Kategori</th><th scope="col">Fiyat</th><th scope="col">Durum</th><th scope="col"><span class="visually-hidden">İşlemler</span></th></tr></thead>
+		<tbody>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Narenci Işığı&quot;, &quot;sanatci&quot;: &quot;Elif Demirtaş&quot;, &quot;kategori&quot;: &quot;resim&quot;, &quot;yil&quot;: 2025, &quot;teknik&quot;: &quot;Tuval üzerine yağlıboya&quot;, &quot;olcu&quot;: &quot;90 × 70 cm&quot;, &quot;fiyat&quot;: 18500, &quot;aciklama&quot;: &quot;Sanatçı, gün batımında tarlaların aldığı turuncu tonları kalın fırça darbeleriyle tuvale taşıyor. Önde sıralanan narenci ağaçları, sıcak bir ritim oluşturuyor. Eser, Sergi Salonumuzun en çok ilgi gören resimlerinden biridir ve ahşap, altın varaklı çerçevesiyle birlikte teslim edilir.&quot;}" data-ad="Narenci Işığı Elif Demirtaş"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-narenci-isigi.svg" alt=""></td><td><strong>Narenci Işığı</strong><br><small>Elif Demirtaş, 2025</small></td><td>Resim</td><td>18.500 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Mavi Saat&quot;, &quot;sanatci&quot;: &quot;Mert Aksoy&quot;, &quot;kategori&quot;: &quot;resim&quot;, &quot;yil&quot;: 2024, &quot;teknik&quot;: &quot;Tuval üzerine akrilik&quot;, &quot;olcu&quot;: &quot;80 × 60 cm&quot;, &quot;fiyat&quot;: 14200, &quot;aciklama&quot;: &quot;Mavinin farklı tonlarıyla kurulan eser, ay ışığı altında uyuyan bir kıyı kasabasını anlatır. Akrilik boyanın mat yüzeyi, çalışmaya sakin ve derin bir hava katar.&quot;}" data-ad="Mavi Saat Mert Aksoy"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-mavi-saat.svg" alt=""></td><td><strong>Mavi Saat</strong><br><small>Mert Aksoy, 2024</small></td><td>Resim</td><td>14.200 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Zeytin Bahçesi&quot;, &quot;sanatci&quot;: &quot;Zeynep Kaya&quot;, &quot;kategori&quot;: &quot;resim&quot;, &quot;yil&quot;: 2025, &quot;teknik&quot;: &quot;Tuval üzerine yağlıboya&quot;, &quot;olcu&quot;: &quot;100 × 70 cm&quot;, &quot;fiyat&quot;: 21000, &quot;aciklama&quot;: &quot;Öğleden sonra ışığında sarıya çalan bir bahçe, yuvarlak ağaç kümeleriyle sadeleştirilmiş biçimde işlenmiştir. Zeynep Kaya&#x27;nın &#x27;Toprak ve Işık&#x27; serisinin bir parçasıdır.&quot;}" data-ad="Zeytin Bahçesi Zeynep Kaya"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-zeytin-bahcesi.svg" alt=""></td><td><strong>Zeytin Bahçesi</strong><br><small>Zeynep Kaya, 2025</small></td><td>Resim</td><td>21.000 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Kıyıda Sabah&quot;, &quot;sanatci&quot;: &quot;Elif Demirtaş&quot;, &quot;kategori&quot;: &quot;resim&quot;, &quot;yil&quot;: 2026, &quot;teknik&quot;: &quot;Kağıt üzerine suluboya&quot;, &quot;olcu&quot;: &quot;60 × 45 cm&quot;, &quot;fiyat&quot;: 9800, &quot;aciklama&quot;: &quot;Suluboyanın şeffaflığı, gün doğarken denizin üzerindeki ince sis hissini yansıtır. Eser, UV filtreli cam ve paspartu ile birlikte sunulur.&quot;}" data-ad="Kıyıda Sabah Elif Demirtaş"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-kiyida-sabah.svg" alt=""></td><td><strong>Kıyıda Sabah</strong><br><small>Elif Demirtaş, 2026</small></td><td>Resim</td><td>9.800 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Nar Vazo&quot;, &quot;sanatci&quot;: &quot;Selin Yurt&quot;, &quot;kategori&quot;: &quot;seramik&quot;, &quot;yil&quot;: 2026, &quot;teknik&quot;: &quot;Stoneware, parlak sır&quot;, &quot;olcu&quot;: &quot;32 cm yükseklik&quot;, &quot;fiyat&quot;: 4800, &quot;aciklama&quot;: &quot;Çarkta şekillendirilen vazo, nar meyvesinin taç yapraklarını boyun kısmında taşır. İkinci pişirimde uygulanan altın detaylar elle işlenmiştir.&quot;}" data-ad="Nar Vazo Selin Yurt"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-nar-vazo.svg" alt=""></td><td><strong>Nar Vazo</strong><br><small>Selin Yurt, 2026</small></td><td>Seramik</td><td>4.800 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Kulplu Çömlek&quot;, &quot;sanatci&quot;: &quot;Ayşe Tunç&quot;, &quot;kategori&quot;: &quot;seramik&quot;, &quot;yil&quot;: 2025, &quot;teknik&quot;: &quot;Pişmiş toprak&quot;, &quot;olcu&quot;: &quot;28 cm yükseklik&quot;, &quot;fiyat&quot;: 3600, &quot;aciklama&quot;: &quot;Anadolu çömlekçiliğinin sade çizgilerini bugüne taşıyan çömlek, kazıma desenlerle süslenmiştir. Her parça el yapımı olduğu için küçük farklılıklar gösterebilir.&quot;}" data-ad="Kulplu Çömlek Ayşe Tunç"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-kil-comlek.svg" alt=""></td><td><strong>Kulplu Çömlek</strong><br><small>Ayşe Tunç, 2025</small></td><td>Seramik</td><td>3.600 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Çini Desenli Tabak&quot;, &quot;sanatci&quot;: &quot;Selin Yurt&quot;, &quot;kategori&quot;: &quot;seramik&quot;, &quot;yil&quot;: 2025, &quot;teknik&quot;: &quot;El boyaması sırlı seramik&quot;, &quot;olcu&quot;: &quot;40 cm çap&quot;, &quot;fiyat&quot;: 5400, &quot;aciklama&quot;: &quot;Klasik çini motiflerinin sadeleştirilmiş yorumu olan tabak, duvara asılabilir ya da standıyla sergilenebilir. Mavi ve terrakota tonlar, mekâna sıcak bir akış katar.&quot;}" data-ad="Çini Desenli Tabak Selin Yurt"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-cini-tabak.svg" alt=""></td><td><strong>Çini Desenli Tabak</strong><br><small>Selin Yurt, 2025</small></td><td>Seramik</td><td>5.400 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Mat Sürahi&quot;, &quot;sanatci&quot;: &quot;Ayşe Tunç&quot;, &quot;kategori&quot;: &quot;seramik&quot;, &quot;yil&quot;: 2026, &quot;teknik&quot;: &quot;Mat sırlı porselen&quot;, &quot;olcu&quot;: &quot;30 cm yükseklik&quot;, &quot;fiyat&quot;: 4100, &quot;aciklama&quot;: &quot;İnce porselenden üretilen sürahi, mat sırı ve iki koyu şeridiyle sade bir duruş sergiler. Hem günlük kullanım hem de dekoratif amaçla tercih edilebilir.&quot;}" data-ad="Mat Sürahi Ayşe Tunç"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-mat-surahi.svg" alt=""></td><td><strong>Mat Sürahi</strong><br><small>Ayşe Tunç, 2026</small></td><td>Seramik</td><td>4.100 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Anka&quot;, &quot;sanatci&quot;: &quot;Can Erdem&quot;, &quot;kategori&quot;: &quot;heykel&quot;, &quot;yil&quot;: 2025, &quot;teknik&quot;: &quot;Bronz&quot;, &quot;olcu&quot;: &quot;45 cm yükseklik&quot;, &quot;fiyat&quot;: 32000, &quot;aciklama&quot;: &quot;Anka, yeniden doğuşun simgesidir. Sanatçı bu temayı akışkan bir gövde ve yukarı uzanan kanatlarla yorumlar. Eser kaide ve sertifikası ile birlikte teslim edilir.&quot;}" data-ad="Anka Can Erdem"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-anka.svg" alt=""></td><td><strong>Anka</strong><br><small>Can Erdem, 2025</small></td><td>Heykel</td><td>32.000 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Denge&quot;, &quot;sanatci&quot;: &quot;Burak Çınar&quot;, &quot;kategori&quot;: &quot;heykel&quot;, &quot;yil&quot;: 2025, &quot;teknik&quot;: &quot;Taş ve bronz&quot;, &quot;olcu&quot;: &quot;38 cm yükseklik&quot;, &quot;fiyat&quot;: 19500, &quot;aciklama&quot;: &quot;Farklı malzemelerden oluşan taş katmanları, ağırlık ve hafiflik arasındaki ince çizgiyi anlatır. Parçalar gizli bir mil ile birbirine sabitlenmiştir.&quot;}" data-ad="Denge Burak Çınar"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-denge.svg" alt=""></td><td><strong>Denge</strong><br><small>Burak Çınar, 2025</small></td><td>Heykel</td><td>19.500 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Dalga&quot;, &quot;sanatci&quot;: &quot;Derya Soylu&quot;, &quot;kategori&quot;: &quot;heykel&quot;, &quot;yil&quot;: 2026, &quot;teknik&quot;: &quot;Beyaz mermer&quot;, &quot;olcu&quot;: &quot;50 cm yükseklik&quot;, &quot;fiyat&quot;: 27500, &quot;aciklama&quot;: &quot;Tek parça mermerden oyulan heykel, dalganın en yüksek anındaki gerilimi taşır. Işık altında yüzeydeki damarlar hareket hissini artırır.&quot;}" data-ad="Dalga Derya Soylu"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-dalga.svg" alt=""></td><td><strong>Dalga</strong><br><small>Derya Soylu, 2026</small></td><td>Heykel</td><td>27.500 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+<tr data-kayit="{&quot;baslik&quot;: &quot;Sarmal&quot;, &quot;sanatci&quot;: &quot;Can Erdem&quot;, &quot;kategori&quot;: &quot;heykel&quot;, &quot;yil&quot;: 2024, &quot;teknik&quot;: &quot;Bronz&quot;, &quot;olcu&quot;: &quot;35 cm yükseklik&quot;, &quot;fiyat&quot;: 16800, &quot;aciklama&quot;: &quot;Sarmal, merkeze doğru akan bir enerji olarak yorumlanır. Bronzun sıcak patinası, ışıkla renk değiştirir. Masa üstü ya da raf için uygundur.&quot;}" data-ad="Sarmal Can Erdem"><td><img class="kucuk-resim" src="../assets/img/narenci/eser-sarmal.svg" alt=""></td><td><strong>Sarmal</strong><br><small>Can Erdem, 2024</small></td><td>Heykel</td><td>16.800 ₺</td><td><span class="rozet yesil">Satışta</span></td><td class="eylem"><button type="button" class="btn-ikon" data-duzenle aria-label="Düzenle">Düzenle</button><button type="button" class="btn-ikon tehlike" data-sil aria-label="Sil">Sil</button></td></tr>
+		</tbody></table></div>
+	<p class="bos-not" id="e-bos" hidden>Eşleşen eser yok.</p>
+</section>
+
+			</main>
+		</div>
+	</div>
+
+	<div class="toast-alani" id="toast-alani" role="status" aria-live="polite"></div>
+	<div class="modal fade" id="silModal" tabindex="-1" aria-labelledby="silBaslik" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+		<div class="modal-header"><h2 class="modal-title" id="silBaslik">Silmeyi onaylayın</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+		<div class="modal-body"><p id="silMetin">Bu kaydı silmek istediğinize emin misiniz?</p></div>
+		<div class="modal-footer"><button type="button" class="btn btn-ikincil" data-bs-dismiss="modal">Vazgeç</button><button type="button" class="btn btn-tehlike" id="silOnay">Evet, sil</button></div>
+	</div></div></div>
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="../assets/js/admin.js"></script>
+</body>
+</html>

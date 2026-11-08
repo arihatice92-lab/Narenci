@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Panel | Narenci Yönetim</title>
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/fonts/themify-icons.css">
+	<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-govde">
+	<a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+	<div class="admin-kabuk">
+		<aside class="yan-menu" id="yan-menu" aria-label="Yönetim menüsü">
+			<a class="yan-marka" href="panel.html"><span class="brand-mark" aria-hidden="true"></span><span><b>Narenci</b><small>Yönetim Paneli</small></span></a>
+			<ul class="yan-liste">
+<li><a href="panel.html" class="aktif" aria-current="page"><span class="ti-dashboard" aria-hidden="true"></span>Panel</a></li>
+<li><a href="duyuru-ekle.html"><span class="ti-announcement" aria-hidden="true"></span>Duyurular</a></li>
+<li><a href="eserler.html"><span class="ti-gallery" aria-hidden="true"></span>Eserler</a></li>
+<li><a href="atolyeler.html"><span class="ti-brush-alt" aria-hidden="true"></span>Atölyeler</a></li>
+<li><a href="mesajlar.html"><span class="ti-email" aria-hidden="true"></span>Mesajlar</a></li>
+<li><a href="istatistik.html"><span class="ti-bar-chart" aria-hidden="true"></span>İstatistik</a></li>
+			</ul>
+			<div class="yan-alt">
+				<a href="../index.html" target="_blank" rel="noopener"><span class="ti-world" aria-hidden="true"></span>Siteyi Gör</a>
+				<a href="giris.html"><span class="ti-power-off" aria-hidden="true"></span>Çıkış</a>
+			</div>
+		</aside>
+		<div class="admin-sag">
+			<header class="ust-cubuk">
+				<button type="button" class="menu-dugme" id="menu-dugme" aria-controls="yan-menu" aria-expanded="false" aria-label="Menüyü aç/kapat"><span class="ti-menu" aria-hidden="true"></span></button>
+				<h1>Genel Bakış</h1>
+				<div class="kullanici"><span class="avatar" aria-hidden="true">Y</span><span class="kullanici-ad">Yönetici <small>(demo)</small></span></div>
+			</header>
+			<main id="icerik" class="admin-icerik">
+				<div class="demo-not" role="note"><strong>Arayüz tasarımı:</strong> Bu sayfa yalnızca tasarım amaçlıdır; girilen bilgiler sunucuya kaydedilmez.</div>
+
+<div class="izgara dort" style="margin-bottom:24px">
+	<div class="ist-kart"><strong>12</strong><span>Yayındaki eser (örnek liste)</span></div>
+	<div class="ist-kart altin"><strong>6</strong><span>Açık atölye</span></div>
+	<div class="ist-kart sage"><strong>3</strong><span>Yeni mesaj</span></div>
+	<div class="ist-kart koyu"><strong>1250</strong><span>Toplam katılımcı</span></div>
+</div>
+<div class="izgara iki">
+	<section class="kart" aria-labelledby="p-g1"><h2 id="p-g1">Aylık ön kayıtlar</h2><div class="grafik-kutu"><canvas id="g-onkayit" role="img" aria-label="Ocak–Ekim aylık ön kayıt sayıları sütun grafiği"></canvas></div></section>
+	<section class="kart" aria-labelledby="p-g2"><h2 id="p-g2">Dallara göre dağılım</h2><div class="grafik-kutu"><canvas id="g-dal" role="img" aria-label="Resim, seramik, heykel dağılımı halka grafiği"></canvas></div></section>
+</div>
+<section class="kart" aria-labelledby="p-h"><h2 id="p-h">Hızlı işlemler</h2>
+	<div class="hizli"><a class="btn btn-birincil" href="duyuru-ekle.html">Duyuru ekle</a><a class="btn btn-ikincil" href="eserler.html">Eser ekle</a><a class="btn btn-ikincil" href="atolyeler.html">Atölye ekle</a><a class="btn btn-ikincil" href="istatistik.html">İstatistikleri düzenle</a></div></section>
+<script type="application/json" id="istatistik-veri">{"sayaclar": {"eser": 320, "atolye": 48, "egitmen": 26, "katilimci": 1250}, "yillik_katilimci": {"etiketler": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"], "degerler": [45, 110, 260, 430, 690, 910, 1090, 1250]}, "dal_dagilimi": {"etiketler": ["Resim", "Seramik", "Heykel"], "degerler": [34, 43, 23]}, "aylik_ziyaret": {"etiketler": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki"], "degerler": [420, 380, 510, 640, 720, 560, 480, 450, 690, 840]}, "aylik_on_kayit": {"etiketler": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki"], "degerler": [12, 9, 18, 25, 22, 14, 10, 8, 31, 44]}}</script>
+
+			</main>
+		</div>
+	</div>
+
+	<div class="toast-alani" id="toast-alani" role="status" aria-live="polite"></div>
+	<div class="modal fade" id="silModal" tabindex="-1" aria-labelledby="silBaslik" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+		<div class="modal-header"><h2 class="modal-title" id="silBaslik">Silmeyi onaylayın</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+		<div class="modal-body"><p id="silMetin">Bu kaydı silmek istediğinize emin misiniz?</p></div>
+		<div class="modal-footer"><button type="button" class="btn btn-ikincil" data-bs-dismiss="modal">Vazgeç</button><button type="button" class="btn btn-tehlike" id="silOnay">Evet, sil</button></div>
+	</div></div></div>
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/js/vendor/chart.umd.js"></script><script src="../assets/js/grafikler.js"></script>
+	<script src="../assets/js/admin.js"></script>
+</body>
+</html>

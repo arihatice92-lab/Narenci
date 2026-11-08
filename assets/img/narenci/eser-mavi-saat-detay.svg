@@ -1,0 +1,10 @@
+<svg data-zoom="300 200 300 233" xmlns="http://www.w3.org/2000/svg" viewBox="300 200 300 233" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mavi tonlarda gece manzarası tablosu (örnek illüstrasyon)">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f3b5c"/><stop offset="0.6" stop-color="#4f7fa8"/><stop offset="1" stop-color="#cfe0ea"/></linearGradient>
+<clipPath id="t"><rect x="250" y="130" width="400" height="350"/></clipPath>
+<filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#231f1c" flood-opacity=".28"/></filter></defs>
+<rect width="900" height="700" fill="#eadccb"/><rect y="610" width="900" height="90" fill="#dccbb5"/>
+<rect x="190" y="70" width="520" height="470" fill="#231f1c" filter="url(#s)"/>
+<rect x="206" y="86" width="488" height="438" fill="none" stroke="#c9a24b" stroke-width="3"/>
+<rect x="222" y="102" width="456" height="406" fill="#f7f3ec"/>
+<g clip-path="url(#t)"><rect x="250" y="130" width="400" height="350" fill="url(#g)"/><circle cx="520" cy="230" r="52" fill="#eef4f7"/><circle cx="540" cy="218" r="46" fill="#2c5278" opacity=".55"/><path d="M250 380 C320 330 380 350 450 365 C520 380 590 330 650 350 L650 480 L250 480Z" fill="#1b2f4a"/><path d="M250 430 C340 400 430 430 520 425 C580 422 620 410 650 415 L650 480 L250 480Z" fill="#12202f"/><g fill="none" stroke-linecap="round"><path d="M270 330 C330 315 380 320 430 305" stroke="#cfe0ea" stroke-width="6" opacity=".8"/><path d="M270 455 C340 440 420 452 500 440" stroke="#4f7fa8" stroke-width="7" opacity=".8"/></g><g fill="#e3c071"><circle cx="300" cy="190" r="4"/><circle cx="360" cy="160" r="3"/><circle cx="420" cy="215" r="4"/><circle cx="580" cy="170" r="3"/><circle cx="610" cy="250" r="4"/><circle cx="330" cy="260" r="3"/></g></g>
+<rect x="390" y="560" width="120" height="24" fill="#c9a24b"/><rect x="402" y="570" width="96" height="4" fill="#8f3f21" opacity=".6"/></svg>

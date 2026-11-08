@@ -1,0 +1,20 @@
+---
+layout: admin-giris
+title: Yönetici Girişi | Narenci
+---
+<div class="giris-kutu">
+	<span class="brand-mark" aria-hidden="true"></span>
+	<h1>{{name}}</h1>
+	<p class="alt">Yönetim paneli girişi</p>
+	<div class="demo-not" role="note"><strong>Demo:</strong> Gerçek doğrulama yoktur; herhangi bir bilgiyle giriş yapabilirsiniz.</div>
+	<form id="giris-formu" novalidate>
+		<div class="alan"><label for="g-eposta">E-posta <span class="zorunlu" aria-hidden="true">*</span></label>
+			<input type="text" id="g-eposta" name="eposta" autocomplete="username" required placeholder="yonetici@narenci.example"></div>
+		<div class="alan"><label for="g-sifre">Şifre <span class="zorunlu" aria-hidden="true">*</span></label>
+			<div class="sifre-satir"><input type="password" id="g-sifre" name="sifre" autocomplete="current-password" required>
+			<button type="button" id="sifre-goster" aria-pressed="false" aria-controls="g-sifre">Göster</button></div></div>
+		<button type="submit" class="btn btn-birincil" style="width:100%;justify-content:center">Giriş Yap</button>
+		<p id="giris-not" class="ipucu" role="status" style="text-align:center;margin:12px 0 0"></p>
+	</form>
+	<p style="text-align:center;margin:18px 0 0"><a href="{{root}}index.html">← Siteye dön</a></p>
+</div>

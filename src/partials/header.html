@@ -1,0 +1,29 @@
+	<!-- NAVBAR (tüm sayfalarda aynı) -->
+	<header id="navigation" class="navbar-light bg-faded site-navigation">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-20 align-self-center">
+					<a class="brand" href="{{root}}index.html" aria-label="{{name}} - Ana Sayfa">
+						<span class="brand-mark" aria-hidden="true"></span>
+						<span class="brand-text"><span class="brand-name">{{name}}</span><small>Galeri &amp; Atölye</small></span>
+					</a>
+				</div>
+				<div class="col-60 d-flex">
+					<nav id="main-menu" aria-label="Ana menü">
+						<ul>
+{{menu}}
+						</ul>
+					</nav>
+				</div>
+				<div class="col-20 d-none d-xl-block text-end align-self-center">
+					<a href="{{root}}admin/giris.html" class="header-btn">Yönetim</a>
+					<a href="{{root}}atolyeler.html" class="btn_one">Ön Kayıt</a>
+				</div>
+				<ul class="mobile_menu">
+{{mobile_menu}}
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main id="icerik">

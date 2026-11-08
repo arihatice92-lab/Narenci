@@ -1,0 +1,60 @@
+[
+ {
+  "slug": "anadolu-kilinden",
+  "baslik": "Anadolu Kilinden",
+  "dal": "Seramik",
+  "tarih": "29 Ekim - 29 Kasım 2026",
+  "durum": "Devam ediyor",
+  "ozet": "Anadolu'nun farklı bölgelerinden kil ve geleneksel tekniklerle üretilen seramik eserler.",
+  "aciklama": [
+   "Cumhuriyet'in 103. yılına özel hazırlanan sergi, Anadolu çömlekçiliğinin sadeliğini ve çağdaş seramik sanatındaki yansımalarını bir araya getiriyor.",
+   "Sergide yer alan eserlerin bir bölümü satışa açıktır."
+  ],
+  "eserler": [
+   "nar-vazo",
+   "kil-comlek",
+   "cini-tabak",
+   "mat-surahi"
+  ],
+  "gorsel": "assets/img/narenci/atolye-seramik",
+  "alt": "Rafta duran seramik vazolar (örnek illüstrasyon)"
+ },
+ {
+  "slug": "isik-genc-sanatcilar",
+  "baslik": "Işık: Genç Sanatçılar Sergisi",
+  "dal": "Resim",
+  "tarih": "12 - 31 Aralık 2026",
+  "durum": "Yakında",
+  "ozet": "Resim yarışmasında dereceye giren eserler ve davetli sanatçıların ışık temalı çalışmaları.",
+  "aciklama": [
+   "Genç Sanatçılar Resim Yarışması'nda dereceye giren eserler, davetli sanatçıların çalışmalarıyla birlikte sergilenecek.",
+   "Açılış töreni 12 Aralık saat 17.00'de yapılacaktır."
+  ],
+  "eserler": [
+   "narenci-isigi",
+   "mavi-saat"
+  ],
+  "gorsel": "assets/img/narenci/eser-narenci-isigi",
+  "alt": "Gün batımı manzarası tablosu (örnek illüstrasyon)"
+ },
+ {
+  "slug": "kil-ve-tas",
+  "baslik": "Kil ve Taş: Çağdaş Heykel",
+  "dal": "Heykel",
+  "tarih": "5 - 30 Eylül 2026",
+  "durum": "Sona erdi",
+  "ozet": "Bronz, mermer ve taş heykellerin buluştuğu çağdaş heykel sergisi.",
+  "aciklama": [
+   "Dört sanatçının farklı malzemelerle ürettiği heykeller, ışık ve gölgenin hacimle kurduğu ilişkiyi ele aldı.",
+   "Sergi sona ermiştir; eserlerin bir kısmı koleksiyonumuzda yer almaya devam ediyor."
+  ],
+  "eserler": [
+   "anka",
+   "denge",
+   "dalga",
+   "sarmal"
+  ],
+  "gorsel": "assets/img/narenci/eser-anka",
+  "alt": "Kaide üzerinde bronz heykel (örnek illüstrasyon)"
+ }
+]

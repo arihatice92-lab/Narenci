@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Mesajlar | Narenci Yönetim</title>
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/fonts/themify-icons.css">
+	<link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-govde">
+	<a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+	<div class="admin-kabuk">
+		<aside class="yan-menu" id="yan-menu" aria-label="Yönetim menüsü">
+			<a class="yan-marka" href="panel.html"><span class="brand-mark" aria-hidden="true"></span><span><b>Narenci</b><small>Yönetim Paneli</small></span></a>
+			<ul class="yan-liste">
+<li><a href="panel.html"><span class="ti-dashboard" aria-hidden="true"></span>Panel</a></li>
+<li><a href="duyuru-ekle.html"><span class="ti-announcement" aria-hidden="true"></span>Duyurular</a></li>
+<li><a href="eserler.html"><span class="ti-gallery" aria-hidden="true"></span>Eserler</a></li>
+<li><a href="atolyeler.html"><span class="ti-brush-alt" aria-hidden="true"></span>Atölyeler</a></li>
+<li><a href="mesajlar.html" class="aktif" aria-current="page"><span class="ti-email" aria-hidden="true"></span>Mesajlar</a></li>
+<li><a href="istatistik.html"><span class="ti-bar-chart" aria-hidden="true"></span>İstatistik</a></li>
+			</ul>
+			<div class="yan-alt">
+				<a href="../index.html" target="_blank" rel="noopener"><span class="ti-world" aria-hidden="true"></span>Siteyi Gör</a>
+				<a href="giris.html"><span class="ti-power-off" aria-hidden="true"></span>Çıkış</a>
+			</div>
+		</aside>
+		<div class="admin-sag">
+			<header class="ust-cubuk">
+				<button type="button" class="menu-dugme" id="menu-dugme" aria-controls="yan-menu" aria-expanded="false" aria-label="Menüyü aç/kapat"><span class="ti-menu" aria-hidden="true"></span></button>
+				<h1>Şikayet ve Öneri Kutusu</h1>
+				<div class="kullanici"><span class="avatar" aria-hidden="true">Y</span><span class="kullanici-ad">Yönetici <small>(demo)</small></span></div>
+			</header>
+			<main id="icerik" class="admin-icerik">
+				<div class="demo-not" role="note"><strong>Arayüz tasarımı:</strong> Bu sayfa yalnızca tasarım amaçlıdır; girilen bilgiler sunucuya kaydedilmez.</div>
+
+<section class="kart" aria-labelledby="m-b">
+	<div class="kart-ust"><h2 id="m-b">Gelen mesajlar</h2>
+		<div class="arama-satiri" style="margin:0"><input type="search" class="arama" placeholder="Ara…" aria-label="Mesaj ara" data-ara="#m-tablo" data-filtre="#m-tur" data-bos="#m-bos">
+		<select id="m-tur" class="arama" style="max-width:180px" aria-label="Türe göre filtrele"><option value="">Tüm türler</option><option>Bilgi talebi</option><option>Şikayet</option><option>Öneri</option><option>Teşekkür</option></select></div></div>
+	<div class="tablo-kap"><table class="tablo" id="m-tablo"><caption class="visually-hidden">İletişim formundan gelen mesajlar</caption>
+		<thead><tr><th scope="col">Tarih</th><th scope="col">Gönderen</th><th scope="col">Tür</th><th scope="col">Konu</th><th scope="col">Durum</th><th scope="col"><span class="visually-hidden">İşlemler</span></th></tr></thead>
+		<tbody>
+<tr data-tur="Bilgi talebi" data-ad="Deniz Aydın Narenci Işığı" data-mesaj="Merhaba, Narenci Işığı tablosunun taksitle satın alma seçeneği var mı? Ayrıca çerçevesiz teslim mümkün mü?" data-kisi="Deniz Aydın (deniz@ornek.example)" data-konu="Narenci Işığı" data-tarih="6 Kas 2026"><td>6 Kas 2026</td><td><strong>Deniz Aydın</strong><br><small>deniz@ornek.example</small></td><td><span class="rozet">Bilgi talebi</span></td><td>Narenci Işığı</td><td><span class="rozet turuncu">Yeni</span></td><td class="eylem"><button type="button" class="btn-ikon" data-oku>Oku</button></td></tr>
+<tr data-tur="Şikayet" data-ad="Gökhan Er Atölye saati değişikliği" data-mesaj="Perşembe seramik atölyesinin saati son anda değiştirildi ve haber verilmedi. Bilgilendirme yapılmasını rica ederim." data-kisi="Gökhan Er (gokhan@ornek.example)" data-konu="Atölye saati değişikliği" data-tarih="4 Kas 2026"><td>4 Kas 2026</td><td><strong>Gökhan Er</strong><br><small>gokhan@ornek.example</small></td><td><span class="rozet">Şikayet</span></td><td>Atölye saati değişikliği</td><td><span class="rozet turuncu">Yeni</span></td><td class="eylem"><button type="button" class="btn-ikon" data-oku>Oku</button></td></tr>
+<tr data-tur="Öneri" data-ad="Meltem Kılıç Hafta sonu çocuk atölyesi" data-mesaj="Hafta sonları 8-12 yaş için kısa seramik atölyeleri açılabilir mi? Birçok aile ilgilenir diye düşünüyorum." data-kisi="Meltem Kılıç (meltem@ornek.example)" data-konu="Hafta sonu çocuk atölyesi" data-tarih="2 Kas 2026"><td>2 Kas 2026</td><td><strong>Meltem Kılıç</strong><br><small>meltem@ornek.example</small></td><td><span class="rozet">Öneri</span></td><td>Hafta sonu çocuk atölyesi</td><td><span class="rozet turuncu">Yeni</span></td><td class="eylem"><button type="button" class="btn-ikon" data-oku>Oku</button></td></tr>
+<tr data-tur="Teşekkür" data-ad="Okan Yıldız Anadolu Kilinden sergisi" data-mesaj="Sergi çok güzeldi, eğitmenler ve görevliler çok ilgiliydi. Emeğinize sağlık." data-kisi="Okan Yıldız (okan@ornek.example)" data-konu="Anadolu Kilinden sergisi" data-tarih="30 Eki 2026"><td>30 Eki 2026</td><td><strong>Okan Yıldız</strong><br><small>okan@ornek.example</small></td><td><span class="rozet">Teşekkür</span></td><td>Anadolu Kilinden sergisi</td><td><span class="rozet yesil">Yanıtlandı</span></td><td class="eylem"><button type="button" class="btn-ikon" data-oku>Oku</button></td></tr>
+<tr data-tur="Bilgi talebi" data-ad="Sibel Tan Grup ziyareti" data-mesaj="Lisemizin 30 kişilik sınıfı için Sergi Salonu&#x27;nda rehberli tur planlamak istiyoruz." data-kisi="Sibel Tan (sibel@ornek.example)" data-konu="Grup ziyareti" data-tarih="27 Eki 2026"><td>27 Eki 2026</td><td><strong>Sibel Tan</strong><br><small>sibel@ornek.example</small></td><td><span class="rozet">Bilgi talebi</span></td><td>Grup ziyareti</td><td><span class="rozet yesil">Yanıtlandı</span></td><td class="eylem"><button type="button" class="btn-ikon" data-oku>Oku</button></td></tr>
+<tr data-tur="Öneri" data-ad="Barış Koç Online kayıt" data-mesaj="Atölye ücretlerini internet sitesinden ödeyebilmek harika olurdu." data-kisi="Barış Koç (baris@ornek.example)" data-konu="Online kayıt" data-tarih="22 Eki 2026"><td>22 Eki 2026</td><td><strong>Barış Koç</strong><br><small>baris@ornek.example</small></td><td><span class="rozet">Öneri</span></td><td>Online kayıt</td><td><span class="rozet yesil">Yanıtlandı</span></td><td class="eylem"><button type="button" class="btn-ikon" data-oku>Oku</button></td></tr>
+		</tbody></table></div>
+	<p class="bos-not" id="m-bos" hidden>Eşleşen mesaj yok.</p>
+</section>
+<div class="modal fade" id="mesajModal" tabindex="-1" aria-labelledby="mesajKonu" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+	<div class="modal-header"><div><small id="mesajMeta"></small><h2 class="modal-title" id="mesajKonu"></h2></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+	<div class="modal-body"><p><strong id="mesajKisi"></strong></p><p id="mesajMetin"></p></div>
+	<div class="modal-footer"><button type="button" class="btn btn-ikincil" data-bs-dismiss="modal">Kapat</button><button type="button" class="btn btn-birincil" id="mesaj-yanitla">Yanıtla</button></div></div></div></div>
+
+			</main>
+		</div>
+	</div>
+
+	<div class="toast-alani" id="toast-alani" role="status" aria-live="polite"></div>
+	<div class="modal fade" id="silModal" tabindex="-1" aria-labelledby="silBaslik" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+		<div class="modal-header"><h2 class="modal-title" id="silBaslik">Silmeyi onaylayın</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+		<div class="modal-body"><p id="silMetin">Bu kaydı silmek istediğinize emin misiniz?</p></div>
+		<div class="modal-footer"><button type="button" class="btn btn-ikincil" data-bs-dismiss="modal">Vazgeç</button><button type="button" class="btn btn-tehlike" id="silOnay">Evet, sil</button></div>
+	</div></div></div>
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="../assets/js/admin.js"></script>
+</body>
+</html>

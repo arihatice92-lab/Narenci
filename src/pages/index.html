@@ -1,0 +1,112 @@
+---
+title: Narenci | Sanat Galerisi & Atölye Platformu
+description: Resim, seramik ve heykel eserlerinin sergilendiği, atölye ve eğitimlerle sanatı birlikte öğrendiğimiz galeri ve eğitim platformu.
+---
+<!-- VİTRİN: otomatik kayan slider (3 öğe, tıklayınca detay sayfasına gider) -->
+{{slider}}
+
+<!-- SAYAÇ -->
+<section class="count_area counter_feature">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-counter"><span class="ti-gallery sc_one" aria-hidden="true"></span><h2 class="counter-num">{{sayac_eser}}</h2><p>Bugüne Dek Sergilenen Eser</p></div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-counter"><span class="ti-brush-alt sc_two" aria-hidden="true"></span><h2 class="counter-num">{{sayac_atolye}}</h2><p>Düzenlenen Atölye</p></div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-counter"><span class="ti-id-badge sc_three" aria-hidden="true"></span><h2 class="counter-num">{{sayac_egitmen}}</h2><p>Sanatçı ve Eğitmen</p></div>
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<div class="single-counter"><span class="ti-user sc_four" aria-hidden="true"></span><h2 class="counter-num">{{sayac_katilimci}}</h2><p>Kayıtlı Katılımcı</p></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- NEDEN BİZ -->
+<section class="top_cat__area section-padding">
+	<div class="container">
+		<div class="section-title text-center">
+			<span class="section-kicker">Neler Sunuyoruz</span>
+			<h2>Bir çatı altında üç sanat dalı</h2>
+			<p>Her dalda hem sergilenen eserleri inceleyebilir hem de ilgili atölyeye katılabilirsiniz.</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+				<div class="single_tp"><span class="sc_one">01</span><h3>Resim</h3><p>Yağlı boya, suluboya ve karakalem eserler; başlangıçtan ileri seviyeye resim atölyeleri.</p><a href="{{root}}resim.html" class="more-link">Koleksiyonu gör &rarr;</a></div>
+			</div>
+			<div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+				<div class="single_tp"><span class="sc_two">02</span><h3>Seramik</h3><p>El yapımı vazolar, tabaklar ve heykelsi formlar; çark ve el şekillendirme kursları.</p><a href="{{root}}seramik.html" class="more-link">Koleksiyonu gör &rarr;</a></div>
+			</div>
+			<div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+				<div class="single_tp"><span class="sc_three">03</span><h3>Heykel</h3><p>Taş, bronz ve çağdaş malzemelerle üretilmiş çalışmalar; modelaj ve kalıp atölyeleri.</p><a href="{{root}}heykel.html" class="more-link">Koleksiyonu gör &rarr;</a></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- SAYILARLA NARENCİ (Chart.js) -->
+<section class="sayilarla section-padding" id="sayilarla">
+	<div class="container">
+		<div class="section-title text-center">
+			<span class="section-kicker">Sayılarla Narenci</span>
+			<h2>Büyüyen bir sanat topluluğu</h2>
+			<p>2019'dan bugüne katılımcı sayımız, atölye dağılımımız ve Sergi Salonu'na gösterilen ilgi.</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-7"><figure class="grafik-kart"><figcaption>Yıllara göre kayıtlı katılımcı sayısı</figcaption>
+				<div class="grafik-kutu"><canvas id="g-katilimci" role="img" aria-label="2019'da 45 olan kayıtlı katılımcı sayısı 2026'da 1250'ye yükseldi"></canvas></div></figure></div>
+			<div class="col-lg-5"><figure class="grafik-kart"><figcaption>Atölye katılımcılarının dallara dağılımı (%)</figcaption>
+				<div class="grafik-kutu"><canvas id="g-dal" role="img" aria-label="Katılımcıların yüzde 34'ü resim, yüzde 43'ü seramik, yüzde 23'ü heykel atölyesinde"></canvas></div></figure></div>
+			<div class="col-12"><figure class="grafik-kart"><figcaption>2026 yılı aylık Sergi Salonu ziyaretçi sayısı</figcaption>
+				<div class="grafik-kutu alcak"><canvas id="g-ziyaret" role="img" aria-label="Ocak-Ekim 2026 aylık ziyaretçi sayısı; en yüksek değer Ekim ayında 840"></canvas></div></figure></div>
+		</div>
+		<details class="veri-tablosu">
+			<summary>Grafik verilerini tablo olarak göster</summary>
+			<div class="row">
+				<div class="col-md-4"><table class="table"><caption>Kayıtlı katılımcı</caption><tbody>{{tablo_katilimci}}</tbody></table></div>
+				<div class="col-md-4"><table class="table"><caption>Dal dağılımı</caption><tbody>{{tablo_dal}}</tbody></table></div>
+				<div class="col-md-4"><table class="table"><caption>Aylık ziyaretçi (2026)</caption><tbody>{{tablo_ziyaret}}</tbody></table></div>
+			</div>
+		</details>
+	</div>
+</section>
+<script type="application/json" id="istatistik-veri">{{istatistik_json}}</script>
+<script src="{{root}}assets/js/vendor/chart.umd.js"></script>
+<script src="{{root}}assets/js/grafikler.js"></script>
+
+<!-- DUYURULAR -->
+<section class="duyurular section-padding" id="duyurular">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="section-title duyuru-baslik-alani">
+					<span class="section-kicker">Güncel</span>
+					<h2>Duyurular</h2>
+					<p>Sergi açılışları, yeni atölye dönemleri ve etkinliklerden haberdar olun.</p>
+					<a href="{{root}}duyurular.html" class="btn_one">Daha Fazla</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<ul class="duyuru-listesi">
+{{duyuru_satirlari_5}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+{{duyuru_modallari_5}}
+
+<script>
+window.addEventListener('load', function () {
+	var el = document.getElementById('vitrin'), btn = document.getElementById('vitrin-durdur');
+	if (!el || !btn || !window.bootstrap) return;
+	var c = bootstrap.Carousel.getOrCreateInstance(el), durdu = false;
+	function ayarla(d) { durdu = d; btn.textContent = d ? 'Oynat' : 'Durdur'; btn.setAttribute('aria-pressed', d); d ? c.pause() : c.cycle(); }
+	btn.addEventListener('click', function () { ayarla(!durdu); });
+	if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) ayarla(true);
+});
+</script>

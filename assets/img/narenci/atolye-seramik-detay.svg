@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="225 175 450 350" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Rafta duran el yapımı seramik vazolar">
+<defs><linearGradient id="isik" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7e0" stop-opacity=".75"/><stop offset="1" stop-color="#fff7e0" stop-opacity="0"/></linearGradient></defs>
+<rect width="900" height="700" fill="#dfe5d6"/>
+<polygon points="520,0 760,0 560,700 240,700" fill="url(#isik)"/>
+<rect x="110" y="470" width="680" height="22" fill="#8f6a4a"/><rect x="110" y="492" width="680" height="8" fill="#6d4f35"/>
+<path d="M215 470 C190 420 200 340 235 300 C245 288 247 275 244 255 L244 238 L276 238 L276 255 C273 275 275 288 285 300 C320 340 330 420 305 470Z" fill="#b5542f"/>
+<path d="M203 400 C250 412 270 412 317 400 M207 360 C250 370 270 370 313 360" fill="none" stroke="#c9a24b" stroke-width="5"/>
+<path d="M390 470 C350 430 360 350 410 325 C425 318 428 305 424 295 L424 285 L476 285 L476 295 C472 305 475 318 490 325 C540 350 550 430 510 470Z" fill="#231f1c"/>
+<g fill="#c9a24b"><circle cx="420" cy="385" r="7"/><circle cx="450" cy="400" r="7"/><circle cx="480" cy="385" r="7"/><circle cx="435" cy="430" r="6"/><circle cx="467" cy="430" r="6"/><circle cx="450" cy="360" r="6"/></g>
+<path d="M605 470 C600 420 610 330 625 290 L655 290 C670 330 680 420 675 470Z" fill="#f7f3ec" stroke="#b5542f" stroke-width="3"/>
+<path d="M608 440 H672 M611 410 H669 M615 380 H665 M619 350 H661" stroke="#b5542f" stroke-width="5" fill="none"/>
+<g stroke="#8a9a7b" stroke-width="5" fill="none" stroke-linecap="round"><path d="M640 290 C640 240 620 210 600 190"/><path d="M640 290 C645 235 670 205 695 185"/><path d="M640 290 C640 250 640 220 640 175"/></g>
+<g fill="#8a9a7b"><ellipse cx="598" cy="195" rx="16" ry="8" transform="rotate(-50 598 195)"/><ellipse cx="697" cy="190" rx="16" ry="8" transform="rotate(50 697 190)"/><ellipse cx="640" cy="180" rx="8" ry="16"/></g>
+<rect x="0" y="610" width="900" height="90" fill="#cdd5c0"/>
+<circle cx="250" cy="570" r="40" fill="#c9a24b" opacity=".0"/>
+</svg>

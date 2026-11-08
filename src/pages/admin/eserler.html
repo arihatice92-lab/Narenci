@@ -1,0 +1,37 @@
+---
+layout: admin
+aktif: eser
+title: Eser Yönetimi | Narenci Yönetim
+baslik: Eser Yönetimi
+---
+<section class="kart" aria-labelledby="kayit-baslik">
+	<h2 id="kayit-baslik">Yeni eser ekle</h2>
+	<div class="duzenleme-bandi" id="duzenleme-bandi"><strong></strong> düzenleniyor. <button type="button" class="btn-ikon" id="duzenleme-iptal">Vazgeç</button></div>
+	<form data-yonetim novalidate>
+		<div class="form-satir">
+			<div class="alan"><label for="e-baslik">Eser adı <span class="zorunlu" aria-hidden="true">*</span></label><input type="text" id="e-baslik" name="baslik" required></div>
+			<div class="alan"><label for="e-sanatci">Sanatçı <span class="zorunlu" aria-hidden="true">*</span></label><input type="text" id="e-sanatci" name="sanatci" required></div>
+			<div class="alan"><label for="e-kategori">Kategori</label><select id="e-kategori" name="kategori"><option value="resim">Resim</option><option value="seramik">Seramik</option><option value="heykel">Heykel</option></select></div>
+		</div>
+		<div class="form-satir">
+			<div class="alan"><label for="e-yil">Yıl</label><input type="number" id="e-yil" name="yil" min="1900" max="2100"></div>
+			<div class="alan"><label for="e-teknik">Teknik</label><input type="text" id="e-teknik" name="teknik"></div>
+			<div class="alan"><label for="e-olcu">Ölçü</label><input type="text" id="e-olcu" name="olcu"></div>
+			<div class="alan"><label for="e-fiyat">Fiyat (₺) <span class="zorunlu" aria-hidden="true">*</span></label><input type="number" id="e-fiyat" name="fiyat" min="0" required></div>
+		</div>
+		<div class="alan"><label for="e-aciklama">Açıklama</label><textarea id="e-aciklama" name="aciklama"></textarea></div>
+		<div class="alan"><span class="etiket" id="e-dosya-et">Görseller (birden fazla seçilebilir)</span>
+			<div class="dosya-alani"><input type="file" id="e-dosya" multiple aria-labelledby="e-dosya-et" accept=".jpg,.jpeg,.png,.webp" data-onizleme="#e-onizleme" data-hata="#e-hata" data-turler="jpg,jpeg,png,webp" data-mb="5">
+			<div class="ipucu">JPG, PNG veya WEBP; her biri en çok 5 MB.</div><div class="hata-metin" id="e-hata" role="alert"></div><div class="onizleme" id="e-onizleme"></div></div></div>
+		<div class="hizli"><button type="submit" class="btn btn-birincil">Kaydet</button><button type="reset" class="btn btn-ikincil">Temizle</button></div>
+	</form>
+</section>
+<section class="kart" aria-labelledby="e-liste-b">
+	<div class="kart-ust"><h2 id="e-liste-b">Eser listesi</h2><input type="search" class="arama" placeholder="Eser veya sanatçı ara…" aria-label="Eser ara" data-ara="#e-tablo" data-bos="#e-bos"></div>
+	<div class="tablo-kap"><table class="tablo" id="e-tablo"><caption class="visually-hidden">Eserler</caption>
+		<thead><tr><th scope="col"><span class="visually-hidden">Görsel</span></th><th scope="col">Eser</th><th scope="col">Kategori</th><th scope="col">Fiyat</th><th scope="col">Durum</th><th scope="col"><span class="visually-hidden">İşlemler</span></th></tr></thead>
+		<tbody>
+{{admin_eser_satirlari}}
+		</tbody></table></div>
+	<p class="bos-not" id="e-bos" hidden>Eşleşen eser yok.</p>
+</section>

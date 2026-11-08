@@ -1,0 +1,7 @@
+<svg data-zoom="260 170 380 295" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mermer dalga heykeli (örnek illüstrasyon)"><defs><radialGradient id="sp" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#fff2cf" stop-opacity=".55"/><stop offset="1" stop-color="#fff2cf" stop-opacity="0"/></radialGradient>
+<linearGradient id="br" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3c071"/><stop offset=".55" stop-color="#b5542f"/><stop offset="1" stop-color="#6d2f1b"/></linearGradient>
+<linearGradient id="mr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#bdb5aa"/></linearGradient></defs>
+<rect width="900" height="700" fill="#2b2623"/><polygon points="450,0 250,640 650,640" fill="url(#sp)"/>
+<rect x="0" y="640" width="900" height="60" fill="#1c1917"/>
+<rect x="340" y="450" width="220" height="190" fill="#efe6da"/><rect x="326" y="436" width="248" height="20" fill="#f7f3ec"/><path d="M345 436 C340 360 390 300 450 300 C500 300 520 340 500 372 C486 394 450 380 452 352 C454 335 478 338 480 352" fill="none" stroke="url(#mr)" stroke-width="34" stroke-linecap="round"/><path d="M345 436 C340 360 390 300 450 300" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+<ellipse cx="450" cy="643" rx="150" ry="9" fill="#000" opacity=".35"/></svg>

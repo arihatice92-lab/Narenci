@@ -1,0 +1,199 @@
+[
+ {
+  "slug": "yagliboya-temelleri",
+  "kategori": "resim",
+  "baslik": "Yağlıboya Temelleri",
+  "seviye": "Başlangıç",
+  "sure": "8 hafta",
+  "takvim": "Salı 18.30-21.00",
+  "ucret": 2800,
+  "kontenjan": 10,
+  "egitmen": "Elif Demirtaş",
+  "ozet": "Renk, ışık ve fırça tekniğinde ilk adımlar.",
+  "aciklama": [
+   "Yağlıboya ile hiç çalışmamış olanlar için tasarlanmış, uygulamalı bir atölye. Her hafta küçük bir çalışma yapılır, dönem sonunda tek bir tuval tamamlanır."
+  ],
+  "kazanim": [
+   "Temel renk teorisi ve karışımlar",
+   "Fırça ve palet bıçağı teknikleri",
+   "Işık-gölge ve kompozisyon",
+   "Dönem sonunda tamamlanmış bir tuval"
+  ],
+  "program": [
+   "Malzeme tanışması, ilk renk karışımları",
+   "Basit nesne çalışması",
+   "Işık ve gölge",
+   "Manzara eskizi",
+   "Manzara boyama I",
+   "Manzara boyama II",
+   "Kişisel çalışma",
+   "Değerlendirme ve mini sergi"
+  ],
+  "dahil": "Boya, fırça ve tuval dahil",
+  "gorsel": "assets/img/narenci/atolye-resim",
+  "alt": "Tuval ve palet bulunan resim atölyesi (örnek illüstrasyon)"
+ },
+ {
+  "slug": "suluboya-manzara",
+  "kategori": "resim",
+  "baslik": "Suluboya ile Manzara",
+  "seviye": "Orta",
+  "sure": "6 hafta",
+  "takvim": "Cumartesi 11.00-14.00",
+  "ucret": 2400,
+  "kontenjan": 10,
+  "egitmen": "Elif Demirtaş",
+  "ozet": "Şeffaf lavis teknikleriyle manzara resmi.",
+  "aciklama": [
+   "Suluboyanın akışkanlığını kontrol etmeyi öğrenmek isteyenler için. Doğadan alınan referanslarla sabah ve akşam ışığı çalışılır."
+  ],
+  "kazanim": [
+   "Islak-ıslak ve ıslak-kuru teknikler",
+   "Gökyüzü ve su yansımaları",
+   "Kağıt seçimi ve hazırlığı"
+  ],
+  "program": [
+   "Teknik tanışma",
+   "Gökyüzü",
+   "Dağ ve tepeler",
+   "Su yansımaları",
+   "Bitki ve ağaçlar",
+   "Final çalışma"
+  ],
+  "dahil": "Kağıt dahil, boya öğrenciye ait",
+  "gorsel": "assets/img/narenci/atolye-resim",
+  "alt": "Tuval ve palet bulunan resim atölyesi (örnek illüstrasyon)"
+ },
+ {
+  "slug": "carkta-seramik",
+  "kategori": "seramik",
+  "baslik": "Çarkta Seramik: Başlangıç",
+  "seviye": "Başlangıç",
+  "sure": "8 hafta",
+  "takvim": "Perşembe 18.30-21.30",
+  "ucret": 3200,
+  "kontenjan": 8,
+  "egitmen": "Selin Yurt",
+  "ozet": "Kili tanıyın, çarkta ilk vazonuzu şekillendirin.",
+  "aciklama": [
+   "Kili merkezleme, kaldırma ve şekillendirme adımlarını küçük grup içinde uygulamalı olarak öğrenirsiniz. Malzeme ve fırınlama ücrete dahildir."
+  ],
+  "kazanim": [
+   "Kil hazırlama ve merkezleme",
+   "Çarkta silindir ve kâse çekme",
+   "Kesme, rötuş ve sırlama",
+   "Fırınlanmış 3-4 parça"
+  ],
+  "program": [
+   "Kil tanışması, merkezleme",
+   "Silindir çekme",
+   "Kâse formu",
+   "Vazo formu",
+   "Rötuş ve kulp",
+   "Sırlama",
+   "Fırınlama",
+   "Teslim ve değerlendirme"
+  ],
+  "dahil": "Kil, sır ve fırınlama dahil",
+  "gorsel": "assets/img/narenci/atolye-seramik",
+  "alt": "Rafta duran el yapımı seramik vazolar (örnek illüstrasyon)"
+ },
+ {
+  "slug": "el-sekillendirme",
+  "kategori": "seramik",
+  "baslik": "El Şekillendirme ve Sırlama",
+  "seviye": "Başlangıç",
+  "sure": "6 hafta",
+  "takvim": "Pazar 11.00-14.00",
+  "ucret": 2600,
+  "kontenjan": 8,
+  "egitmen": "Ayşe Tunç",
+  "ozet": "Çark olmadan, elle seramik üretimi.",
+  "aciklama": [
+   "Plaka, bobin ve çimdik tekniklerini öğrenerek kendi tabak, kâse ve heykelsi formlarınızı üretirsiniz."
+  ],
+  "kazanim": [
+   "Plaka, bobin ve çimdik teknikleri",
+   "Yüzey süsleme ve kazıma",
+   "Sır uygulama"
+  ],
+  "program": [
+   "Çimdik tekniği",
+   "Bobin tekniği",
+   "Plaka tekniği",
+   "Yüzey süsleme",
+   "Sırlama",
+   "Teslim"
+  ],
+  "dahil": "Malzeme ve fırınlama dahil",
+  "gorsel": "assets/img/narenci/atolye-seramik",
+  "alt": "Rafta duran el yapımı seramik vazolar (örnek illüstrasyon)"
+ },
+ {
+  "slug": "portre-modelaj",
+  "kategori": "heykel",
+  "baslik": "Portre Modelajı",
+  "seviye": "Orta",
+  "sure": "6 hafta",
+  "takvim": "Cumartesi 14.00-17.00",
+  "ucret": 3000,
+  "kontenjan": 8,
+  "egitmen": "Can Erdem",
+  "ozet": "Kil ile insan başı oranları ve ifade.",
+  "aciklama": [
+   "Canlı model eşliğinde kafa yapısı, oranlar ve ifade çalışılır. Atölye sonunda kil portre pişirilmek üzere hazırlanır."
+  ],
+  "kazanim": [
+   "Baş oranları ve anatomi",
+   "İfade ve yüzey işçiliği",
+   "Boşaltma ve kurutma"
+  ],
+  "program": [
+   "İskelet ve armatür",
+   "Kaba hacim",
+   "Yüz oranları",
+   "Detaylar",
+   "Yüzey işçiliği",
+   "Boşaltma ve teslim"
+  ],
+  "dahil": "Kil ve armatür dahil",
+  "gorsel": "assets/img/narenci/atolye-heykel",
+  "alt": "Kil portre ve modelaj aletleri olan atölye (örnek illüstrasyon)"
+ },
+ {
+  "slug": "tas-ve-metal",
+  "kategori": "heykel",
+  "baslik": "Taş ve Metal Heykele Giriş",
+  "seviye": "Başlangıç",
+  "sure": "10 hafta",
+  "takvim": "Çarşamba 18.00-21.00",
+  "ucret": 4200,
+  "kontenjan": 6,
+  "egitmen": "Burak Çınar",
+  "ozet": "Taş oyma ve metal işleme temelleri.",
+  "aciklama": [
+   "Küçük ölçekli taş oyma ve metal kaynak yöntemlerini güvenlik eğitimiyle birlikte öğrenirsiniz."
+  ],
+  "kazanim": [
+   "Atölye güvenliği",
+   "Taş oyma temelleri",
+   "Metal kesme ve kaynak",
+   "Dönem sonu küçük bir heykel"
+  ],
+  "program": [
+   "Güvenlik eğitimi",
+   "Taş tanıma",
+   "Oyma I",
+   "Oyma II",
+   "Yüzey işleme",
+   "Metal tanıma",
+   "Kesme ve eğme",
+   "Kaynak",
+   "Birleştirme",
+   "Teslim ve sergi"
+  ],
+  "dahil": "Güvenlik ekipmanı ve malzeme dahil",
+  "gorsel": "assets/img/narenci/atolye-heykel",
+  "alt": "Kil portre ve modelaj aletleri olan atölye (örnek illüstrasyon)"
+ }
+]

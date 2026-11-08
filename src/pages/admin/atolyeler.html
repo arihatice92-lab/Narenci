@@ -1,0 +1,41 @@
+---
+layout: admin
+aktif: atolye
+title: Atölye Yönetimi | Narenci Yönetim
+baslik: Atölye Yönetimi
+---
+<section class="kart" aria-labelledby="kayit-baslik">
+	<h2 id="kayit-baslik">Yeni atölye ekle</h2>
+	<div class="duzenleme-bandi" id="duzenleme-bandi"><strong></strong> düzenleniyor. <button type="button" class="btn-ikon" id="duzenleme-iptal">Vazgeç</button></div>
+	<form data-yonetim novalidate>
+		<div class="form-satir">
+			<div class="alan"><label for="a-baslik">Atölye adı <span class="zorunlu" aria-hidden="true">*</span></label><input type="text" id="a-baslik" name="baslik" required></div>
+			<div class="alan"><label for="a-kategori">Dal</label><select id="a-kategori" name="kategori"><option value="resim">Resim</option><option value="seramik">Seramik</option><option value="heykel">Heykel</option></select></div>
+			<div class="alan"><label for="a-seviye">Seviye</label><select id="a-seviye" name="seviye"><option>Başlangıç</option><option>Orta</option><option>İleri</option><option>Tüm seviyeler</option></select></div>
+		</div>
+		<div class="form-satir">
+			<div class="alan"><label for="a-sure">Süre</label><input type="text" id="a-sure" name="sure" placeholder="8 hafta"></div>
+			<div class="alan"><label for="a-takvim">Gün/saat</label><input type="text" id="a-takvim" name="takvim" placeholder="Salı 18:30–21:00"></div>
+			<div class="alan"><label for="a-ucret">Ücret (₺) <span class="zorunlu" aria-hidden="true">*</span></label><input type="number" id="a-ucret" name="ucret" min="0" required></div>
+			<div class="alan"><label for="a-kontenjan">Kontenjan</label><input type="number" id="a-kontenjan" name="kontenjan" min="1"></div>
+		</div>
+		<div class="alan"><label for="a-egitmen">Eğitmen</label><input type="text" id="a-egitmen" name="egitmen"></div>
+		<div class="alan"><label for="a-aciklama">Açıklama</label><textarea id="a-aciklama" name="aciklama"></textarea></div>
+		<fieldset class="alan" style="border:0;padding:0"><legend class="etiket" style="font-size:15px">Haftalık program</legend>
+			<div id="program-liste">
+				<div class="prog-satir"><input type="text" aria-label="Hafta 1 başlık" placeholder="Hafta 1 – başlık"><input type="text" aria-label="Hafta 1 içerik" placeholder="Konu ve kazanımlar"><button type="button" class="btn-ikon tehlike" aria-label="Satırı kaldır">Kaldır</button></div>
+			</div>
+			<div><button type="button" class="btn btn-ikincil" id="program-ekle">+ Hafta ekle</button></div>
+		</fieldset>
+		<div class="hizli"><button type="submit" class="btn btn-birincil">Kaydet</button><button type="reset" class="btn btn-ikincil">Temizle</button></div>
+	</form>
+</section>
+<section class="kart" aria-labelledby="a-liste-b">
+	<div class="kart-ust"><h2 id="a-liste-b">Atölye listesi</h2><input type="search" class="arama" placeholder="Atölye ara…" aria-label="Atölye ara" data-ara="#a-tablo" data-bos="#a-bos"></div>
+	<div class="tablo-kap"><table class="tablo" id="a-tablo"><caption class="visually-hidden">Atölyeler</caption>
+		<thead><tr><th scope="col">Atölye</th><th scope="col">Dal</th><th scope="col">Süre / Takvim</th><th scope="col">Ücret</th><th scope="col">Kontenjan</th><th scope="col"><span class="visually-hidden">İşlemler</span></th></tr></thead>
+		<tbody>
+{{admin_atolye_satirlari}}
+		</tbody></table></div>
+	<p class="bos-not" id="a-bos" hidden>Eşleşen atölye yok.</p>
+</section>

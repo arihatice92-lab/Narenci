@@ -1,0 +1,8 @@
+[
+ {"id":"m6","tarih":"2026-11-06","ad":"Deniz Aydın","eposta":"deniz@ornek.example","tur":"Bilgi talebi","konu":"Narenci Işığı","mesaj":"Merhaba, Narenci Işığı tablosunun taksitle satın alma seçeneği var mı? Ayrıca çerçevesiz teslim mümkün mü?","durum":"Yeni"},
+ {"id":"m5","tarih":"2026-11-04","ad":"Gökhan Er","eposta":"gokhan@ornek.example","tur":"Şikayet","konu":"Atölye saati değişikliği","mesaj":"Perşembe seramik atölyesinin saati son anda değiştirildi ve haber verilmedi. Bilgilendirme yapılmasını rica ederim.","durum":"Yeni"},
+ {"id":"m4","tarih":"2026-11-02","ad":"Meltem Kılıç","eposta":"meltem@ornek.example","tur":"Öneri","konu":"Hafta sonu çocuk atölyesi","mesaj":"Hafta sonları 8-12 yaş için kısa seramik atölyeleri açılabilir mi? Birçok aile ilgilenir diye düşünüyorum.","durum":"Yeni"},
+ {"id":"m3","tarih":"2026-10-30","ad":"Okan Yıldız","eposta":"okan@ornek.example","tur":"Teşekkür","konu":"Anadolu Kilinden sergisi","mesaj":"Sergi çok güzeldi, eğitmenler ve görevliler çok ilgiliydi. Emeğinize sağlık.","durum":"Yanıtlandı"},
+ {"id":"m2","tarih":"2026-10-27","ad":"Sibel Tan","eposta":"sibel@ornek.example","tur":"Bilgi talebi","konu":"Grup ziyareti","mesaj":"Lisemizin 30 kişilik sınıfı için Sergi Salonu'nda rehberli tur planlamak istiyoruz.","durum":"Yanıtlandı"},
+ {"id":"m1","tarih":"2026-10-22","ad":"Barış Koç","eposta":"baris@ornek.example","tur":"Öneri","konu":"Online kayıt","mesaj":"Atölye ücretlerini internet sitesinden ödeyebilmek harika olurdu.","durum":"Yanıtlandı"}
+]

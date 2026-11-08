@@ -1,0 +1,36 @@
+---
+layout: admin
+aktif: duyuru
+title: Duyuru Yönetimi | Narenci Yönetim
+baslik: Duyuru Yönetimi
+---
+<section class="kart" aria-labelledby="kayit-baslik">
+	<h2 id="kayit-baslik">Yeni duyuru ekle</h2>
+	<div class="duzenleme-bandi" id="duzenleme-bandi"><strong></strong> düzenleniyor. <button type="button" class="btn-ikon" id="duzenleme-iptal">Vazgeç</button></div>
+	<form data-yonetim novalidate>
+		<div class="form-satir">
+			<div class="alan"><label for="d-baslik">Başlık <span class="zorunlu" aria-hidden="true">*</span></label><input type="text" id="d-baslik" name="baslik" required maxlength="90"></div>
+			<div class="alan"><label for="d-etiket">Etiket</label><select id="d-etiket" name="etiket"><option>Sergi</option><option>Atölye</option><option>Duyuru</option><option>Etkinlik</option></select></div>
+			<div class="alan"><label for="d-tarih">Yayın tarihi <span class="zorunlu" aria-hidden="true">*</span></label><input type="date" id="d-tarih" name="tarih" required></div>
+		</div>
+		<div class="alan"><label for="d-ozet">Kısa özet <span class="zorunlu" aria-hidden="true">*</span></label><textarea id="d-ozet" name="ozet" required maxlength="160" data-sayac="#ozet-say" style="min-height:80px"></textarea><div class="sayac" id="ozet-say" aria-live="polite"></div></div>
+		<div class="alan"><label for="d-icerik">Duyuru metni <span class="zorunlu" aria-hidden="true">*</span></label><textarea id="d-icerik" name="icerik" required></textarea></div>
+		<div class="alan"><span class="etiket" id="d-dosya-et">Ek dosya (PDF, Word veya görsel)</span>
+			<div class="dosya-alani"><input type="file" id="d-dosya" aria-labelledby="d-dosya-et" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.webp" data-onizleme="#d-onizleme" data-hata="#d-hata" data-turler="pdf,doc,docx,jpg,jpeg,png,webp" data-mb="5">
+			<div class="ipucu">En çok 5 MB. İzin verilen türler: PDF, DOC, DOCX, JPG, PNG, WEBP.</div><div class="hata-metin" id="d-hata" role="alert"></div><div class="onizleme" id="d-onizleme"></div></div></div>
+		<div class="alan"><label class="anahtar"><input type="checkbox" name="yayinda" checked> <span>Hemen yayınla</span></label></div>
+		<div class="hizli"><button type="submit" class="btn btn-birincil">Kaydet</button><button type="button" class="btn btn-ikincil" id="onizle-btn">Önizle</button><button type="reset" class="btn btn-ikincil">Temizle</button></div>
+	</form>
+</section>
+<section class="kart" aria-labelledby="d-liste-b">
+	<div class="kart-ust"><h2 id="d-liste-b">Mevcut duyurular</h2><input type="search" class="arama" placeholder="Duyuru ara…" aria-label="Duyuru ara" data-ara="#d-tablo" data-bos="#d-bos"></div>
+	<div class="tablo-kap"><table class="tablo" id="d-tablo"><caption class="visually-hidden">Duyurular (yeniden eskiye)</caption>
+		<thead><tr><th scope="col">Tarih</th><th scope="col">Başlık</th><th scope="col">Etiket</th><th scope="col">Durum</th><th scope="col"><span class="visually-hidden">İşlemler</span></th></tr></thead>
+		<tbody>
+{{admin_duyuru_satirlari}}
+		</tbody></table></div>
+	<p class="bos-not" id="d-bos" hidden>Eşleşen duyuru yok.</p>
+</section>
+<div class="modal fade" id="onizleModal" tabindex="-1" aria-labelledby="onizleBaslik" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+	<div class="modal-header"><div><span class="rozet" id="onizleEtiket"></span><h2 class="modal-title" id="onizleBaslik"></h2></div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button></div>
+	<div class="modal-body"><p id="onizleMetin" style="white-space:pre-line"></p></div></div></div></div>

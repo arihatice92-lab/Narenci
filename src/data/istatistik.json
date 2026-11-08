@@ -1,0 +1,7 @@
+{
+  "sayaclar": {"eser": 320, "atolye": 48, "egitmen": 26, "katilimci": 1250},
+  "yillik_katilimci": {"etiketler": ["2019","2020","2021","2022","2023","2024","2025","2026"], "degerler": [45,110,260,430,690,910,1090,1250]},
+  "dal_dagilimi": {"etiketler": ["Resim","Seramik","Heykel"], "degerler": [34,43,23]},
+  "aylik_ziyaret": {"etiketler": ["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki"], "degerler": [420,380,510,640,720,560,480,450,690,840]},
+  "aylik_on_kayit": {"etiketler": ["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki"], "degerler": [12,9,18,25,22,14,10,8,31,44]}
+}
