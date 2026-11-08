@@ -19,10 +19,10 @@ SITE = {
     "address": "Alemdar Mah. Sanat Sk. No:12, İzmit / Kocaeli",
     "phone": "+90 262 000 00 00",
     "phone_href": "+902620000000",
-    "email": "iletisim@fircavekil.example",
+    "email": "iletisim@narenci.example",
     "year": "2026",
-    "designer": "Hatice ARI",                    # <-- kendi adınla değiştir
-    "student_no": "241307071",                # <-- kendi numaranla değiştir
+    "designer": "Hatice ARI",                    
+    "student_no": "241307071",               
 }
 
 # (başlık, dosya, [alt menüler])
@@ -33,7 +33,7 @@ MENU = [
     ("Hakkımızda", "hakkimizda.html", None),
     ("Misyon-Vizyon", "misyon-vizyon.html", None),
     ("Duyurular", "duyurular.html", None),
-    ("Rakamlarla", "rakamlarla-narenci.html", None),
+    ("İstatistikler", "rakamlarla-narenci.html", None),
     ("İletişim", "iletisim.html", None),
 ]
 # Menüde olmayan ama sitede olacak sayfalar (yoksa 'hazırlanıyor' üretilir)
