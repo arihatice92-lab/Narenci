@@ -26,9 +26,13 @@
 			return new Chart(cv, { type: 'bar', data: { labels: v.etiketler, datasets: [{ label: ad, data: v.degerler, backgroundColor: RENK.terrakota, hoverBackgroundColor: RENK.altin, borderRadius: 4, maxBarThickness: 46 }] },
 				options: { maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return ' ' + sayi(c.parsed.y) + ' ' + ad.toLowerCase(); } } } }, scales: eksenler('') } });
 		},
-		halka: function (cv, v, ad) {
-			return new Chart(cv, { type: 'doughnut', data: { labels: v.etiketler, datasets: [{ label: ad, data: v.degerler, backgroundColor: [RENK.terrakota, RENK.adacayi, RENK.murekkep], borderColor: '#fff', borderWidth: 3, hoverOffset: 8 }] },
-				options: { maintainAspectRatio: false, cutout: '62%', plugins: { legend: { position: 'bottom', labels: { padding: 18, usePointStyle: true } }, tooltip: { callbacks: { label: function (c) { return ' ' + c.label + ': %' + c.parsed; } } } } } });
+		yatay: function (cv, v, ad) {
+			return new Chart(cv, { type: 'bar', data: { labels: v.etiketler, datasets: [{ label: ad, data: v.degerler, backgroundColor: RENK.adacayi, hoverBackgroundColor: RENK.terrakota, borderRadius: 4, maxBarThickness: 30 }] },
+				options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return ' %' + c.parsed.x + ' ' + ad.toLowerCase(); } } } }, scales: { x: { beginAtZero: true, max: 100, grid: { color: RENK.izgara }, ticks: { callback: function (v) { return '%' + v; } } }, y: { grid: { display: false } } } } });
+		},
+		halka: function (cv, v, ad, birim) {
+			return new Chart(cv, { type: 'doughnut', data: { labels: v.etiketler, datasets: [{ label: ad, data: v.degerler, backgroundColor: [RENK.terrakota, RENK.adacayi, RENK.murekkep, RENK.altin, '#d9b8a4'], borderColor: '#fff', borderWidth: 3, hoverOffset: 8 }] },
+				options: { maintainAspectRatio: false, cutout: '62%', plugins: { legend: { position: 'bottom', labels: { padding: 18, usePointStyle: true } }, tooltip: { callbacks: { label: function (c) { return ' ' + c.label + ': ' + (birim === '%' ? '%' + c.parsed : sayi(c.parsed) + (birim ? ' ' + birim : '')); } } } } } });
 		}
 	};
 	window.NarenciGrafik = araclar;
@@ -37,9 +41,14 @@
 	if (!veriEl) return;
 	var d = JSON.parse(veriEl.textContent);
 	var ornekler = {};
-	function kur(id, fn, anahtar, ad) { var cv = document.getElementById(id); if (cv && d[anahtar]) ornekler[id] = fn(cv, d[anahtar], ad); }
+	function kur(id, fn, anahtar, ad, birim) { var cv = document.getElementById(id); if (cv && d[anahtar]) ornekler[id] = fn(cv, d[anahtar], ad, birim); }
 	kur('g-katilimci', araclar.cizgi, 'yillik_katilimci', 'Kayıtlı katılımcı');
-	kur('g-dal', araclar.halka, 'dal_dagilimi', 'Dal dağılımı');
+	kur('g-dal', araclar.halka, 'dal_dagilimi', 'Dal dağılımı', '%');
+	kur('g-sergi', araclar.cubuk, 'sergi_yillik', 'Sergi');
+	kur('g-eser', araclar.halka, 'eser_dal', 'Eser', 'eser');
+	kur('g-yas', araclar.cubuk, 'yas_dagilimi', 'Katılımcı (%)');
+	kur('g-seviye', araclar.halka, 'seviye_dagilimi', 'Seviye', '%');
+	kur('g-memnuniyet', araclar.yatay, 'memnuniyet', 'Memnuniyet');
 	kur('g-ziyaret', araclar.cubuk, 'aylik_ziyaret', 'Ziyaretçi');
 	kur('g-onkayit', araclar.cubuk, 'aylik_on_kayit', 'Ön kayıt');
 	window.NarenciGrafikOrnekleri = ornekler;

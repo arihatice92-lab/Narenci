@@ -33,8 +33,8 @@ description: Narenci galeri ve atölyesinin adresi, telefonu, haritası ve şika
 			<div class="col-lg-9">
 				<div class="on-kayit koyu-degil" id="form">
 					<h2 class="bolum-baslik">Şikayet ve Öneri Formu</h2>
-					<p>Görüş, öneri ve şikayetleriniz Müşteri İlişkileri birimimize iletilir. Yanıtımızı e-posta ile veririz. (Bu örnek sitede form sunucuya gönderilmez.)</p>
-					<form class="site-formu" data-demo novalidate>
+					<p>Görüş, öneri ve şikayetleriniz Müşteri İlişkileri birimimize iletilir. Gönder’e bastığınızda yazdıklarınız, müşteri ilişkileri temsilcimize e-posta olarak iletilir; yanıtımızı yazdığınız e-posta adresine veririz. <em>(Tasarım örneği: bu sitede gerçek e-posta gönderilmez, aşağıda gidecek e-postanın önizlemesi gösterilir.)</em></p>
+					<form class="site-formu" data-demo data-alici="{{email}}" novalidate>
 						<div class="row">
 							<div class="col-md-6"><label for="f-ad">Ad Soyad</label><input id="f-ad" name="ad" type="text" required autocomplete="name"></div>
 							<div class="col-md-6"><label for="f-eposta">E-posta</label><input id="f-eposta" name="eposta" type="email" required autocomplete="email"></div>
@@ -49,6 +49,7 @@ description: Narenci galeri ve atölyesinin adresi, telefonu, haritası ve şika
 						</div>
 						<button type="submit" class="btn_one">Gönder</button>
 						<p class="form-sonuc" role="status" aria-live="polite"></p>
+						<div class="eposta-onizleme" hidden></div>
 					</form>
 				</div>
 			</div>

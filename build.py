@@ -33,6 +33,7 @@ MENU = [
     ("Hakkımızda", "hakkimizda.html", None),
     ("Misyon-Vizyon", "misyon-vizyon.html", None),
     ("Duyurular", "duyurular.html", None),
+    ("Rakamlarla", "rakamlarla-narenci.html", None),
     ("İletişim", "iletisim.html", None),
 ]
 # Menüde olmayan ama sitede olacak sayfalar (yoksa 'hazırlanıyor' üretilir)
@@ -140,6 +141,10 @@ def render(body, meta, root):
                 "admin_atolye_satirlari": yonetim.atolye_satirlari(), "admin_mesaj_satirlari": yonetim.mesaj_satirlari()})
     ctx.update(yonetim.ozet_degerleri())
     ist = load("istatistik.json")
+    for k_, v_ in ist.items():
+        if isinstance(v_, dict) and "etiketler" in v_:
+            ctx["vt_" + k_] = tablo_satirlari(v_, "%" if k_ in ("dal_dagilimi", "seviye_dagilimi", "memnuniyet", "yas_dagilimi") else "")
+    ctx.update({"sayac_sergi": ist["sayaclar"]["sergi"], "sayac_ziyaretci": f'{ist["sayaclar"]["ziyaretci"]:,}'.replace(",", ".")})
     ctx.update({"istatistik_json": json.dumps(ist, ensure_ascii=False),
                 "sayac_eser": ist["sayaclar"]["eser"], "sayac_atolye": ist["sayaclar"]["atolye"],
                 "sayac_egitmen": ist["sayaclar"]["egitmen"], "sayac_katilimci": ist["sayaclar"]["katilimci"],

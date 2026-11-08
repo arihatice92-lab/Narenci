@@ -269,3 +269,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .veri-tablosu table{margin:16px 0 0;font-size:15px}
 .veri-tablosu caption{caption-side:top;font-weight:600;color:var(--murekkep);padding-bottom:4px}
 @media (max-width:575px){.grafik-kutu{height:280px}}
+
+/* Rakamlarla Narenci sayfası */
+.rakam-baslik{font-size:26px;margin:34px 0 18px;padding-bottom:8px;border-bottom:2px solid var(--cizgi)}
+.rakam-sayac{margin-top:0}
+.rakam-sayac .single-counter h2{font-size:34px}
+.rakam-not{text-align:center;color:#6b625b;font-size:14px;margin-top:18px}
+.eposta-onizleme{margin-top:16px;padding:14px 18px;background:var(--krem);border:1px dashed var(--terrakota);border-radius:10px;font-size:15px;color:var(--metin)}
+.eposta-onizleme strong{display:block;margin-bottom:6px;color:var(--murekkep)}
+.eposta-onizleme div{margin-bottom:3px;white-space:pre-line;overflow-wrap:anywhere}
+.eposta-onizleme[hidden]{display:none}
+@media (min-width:992px) and (max-width:1100px){#main-menu ul li{padding:0 4px}#main-menu ul li a{font-size:14.5px}#navigation{padding:12px 12px}}
+/* Üst menü: sütunlar içeriğe göre, çakışma yok */
+@media (min-width:992px){
+	.site-navigation .row{flex-wrap:nowrap;align-items:center}
+	.site-navigation .col-20,.site-navigation .col-60{width:auto;flex:0 0 auto;max-width:none}
+	.site-navigation .col-60{flex:1 1 auto;min-width:0;justify-content:flex-end}
+}
+@media (min-width:1101px) and (max-width:1399px){#main-menu ul li{padding:0 7px}#main-menu ul li a{font-size:16px}}

@@ -1,0 +1,53 @@
+---
+title: Rakamlarla Narenci | Narenci
+description: Narenci galeri ve atölyesinin katılımcı, eser, atölye ve ziyaretçi istatistikleri; grafiklerle rakamlarla Narenci.
+---
+<section class="page-banner"><div class="container"><h1>Rakamlarla Narenci</h1>
+<p class="breadcrumb-line"><a href="{{root}}index.html">Ana Sayfa</a> / Rakamlarla Narenci</p></div></section>
+
+<section class="count_area counter_feature rakam-sayac">
+	<div class="container"><div class="row">
+		<div class="col-lg-2 col-md-4 col-6"><div class="single-counter"><span class="ti-gallery sc_one" aria-hidden="true"></span><h2 class="counter-num">{{sayac_eser}}</h2><p>Sergilenen eser</p></div></div>
+		<div class="col-lg-2 col-md-4 col-6"><div class="single-counter"><span class="ti-brush-alt sc_two" aria-hidden="true"></span><h2 class="counter-num">{{sayac_atolye}}</h2><p>Düzenlenen atölye</p></div></div>
+		<div class="col-lg-2 col-md-4 col-6"><div class="single-counter"><span class="ti-id-badge sc_three" aria-hidden="true"></span><h2 class="counter-num">{{sayac_egitmen}}</h2><p>Sanatçı ve eğitmen</p></div></div>
+		<div class="col-lg-2 col-md-4 col-6"><div class="single-counter"><span class="ti-user sc_four" aria-hidden="true"></span><h2 class="counter-num">{{sayac_katilimci}}</h2><p>Kayıtlı katılımcı</p></div></div>
+		<div class="col-lg-2 col-md-4 col-6"><div class="single-counter"><span class="ti-layout-grid2 sc_one" aria-hidden="true"></span><h2 class="counter-num">{{sayac_sergi}}</h2><p>Açılan sergi</p></div></div>
+		<div class="col-lg-2 col-md-4 col-6"><div class="single-counter"><span class="ti-eye sc_two" aria-hidden="true"></span><h2 class="counter-num">{{sayac_ziyaretci}}</h2><p>2026 ziyaretçisi</p></div></div>
+	</div></div>
+</section>
+
+<section class="sayilarla section-padding">
+	<div class="container">
+		<div class="section-title text-center">
+			<span class="section-kicker">İstatistikler</span>
+			<h2>Sanat topluluğumuzun büyümesi</h2>
+			<p>Katılımcılarımız, eserlerimiz ve sergilerimizle ilgili örnek veriler. Her grafiğin altındaki tablodan sayısal değerlere de ulaşabilirsiniz.</p>
+		</div>
+		<h3 class="rakam-baslik">Topluluk</h3>
+		<div class="row">
+			<div class="col-lg-7"><figure class="grafik-kart"><figcaption>Yıllara göre kayıtlı katılımcı sayısı</figcaption><div class="grafik-kutu "><canvas id="g-katilimci" role="img" aria-label="2019'da 45 olan katılımcı sayısı 2026'da 1250'ye yükseldi"></canvas></div></figure></div>
+			<div class="col-lg-5"><figure class="grafik-kart"><figcaption>Katılımcıların yaş grupları (%)</figcaption><div class="grafik-kutu "><canvas id="g-yas" role="img" aria-label="En kalabalık yaş grubu yüzde 31 ile 25-34"></canvas></div></figure></div>
+			<div class="col-lg-4"><figure class="grafik-kart"><figcaption>Atölye seviyelerine göre dağılım (%)</figcaption><div class="grafik-kutu "><canvas id="g-seviye" role="img" aria-label="Yüzde 52 başlangıç, yüzde 30 orta, yüzde 18 ileri seviye"></canvas></div></figure></div>
+			<div class="col-lg-4"><figure class="grafik-kart"><figcaption>Katılımcıların dallara dağılımı (%)</figcaption><div class="grafik-kutu "><canvas id="g-dal" role="img" aria-label="Yüzde 34 resim, yüzde 43 seramik, yüzde 23 heykel"></canvas></div></figure></div>
+			<div class="col-lg-4"><figure class="grafik-kart"><figcaption>Katılımcı memnuniyeti (%)</figcaption><div class="grafik-kutu "><canvas id="g-memnuniyet" role="img" aria-label="Memnuniyet en yüksek eğitmen ilgisinde, yüzde 94"></canvas></div></figure></div>
+		</div>
+		<h3 class="rakam-baslik">Galeri ve sergiler</h3>
+		<div class="row">
+			<div class="col-lg-4"><figure class="grafik-kart"><figcaption>Eserlerin dallara göre sayısı</figcaption><div class="grafik-kutu "><canvas id="g-eser" role="img" aria-label="Resim 118, seramik 124, heykel 78 eser"></canvas></div></figure></div>
+			<div class="col-lg-4"><figure class="grafik-kart"><figcaption>Yıllara göre açılan sergi sayısı</figcaption><div class="grafik-kutu "><canvas id="g-sergi" role="img" aria-label="2019da 3 olan yıllık sergi sayısı 2026da 14e çıktı"></canvas></div></figure></div>
+			<div class="col-lg-4"><figure class="grafik-kart"><figcaption>2026 aylık Sergi Salonu ziyaretçisi</figcaption><div class="grafik-kutu "><canvas id="g-ziyaret" role="img" aria-label="En yüksek ziyaretçi sayısı Ekim ayında 840"></canvas></div></figure></div>
+		</div>
+		<details class="veri-tablosu">
+			<summary>Tüm grafik verilerini tablo olarak göster</summary>
+			<div class="row">
+				<div class="col-md-6 col-lg-4"><table class="table"><caption>Kayıtlı katılımcı</caption><tbody>{{vt_yillik_katilimci}}</tbody></table></div><div class="col-md-6 col-lg-4"><table class="table"><caption>Yaş grupları</caption><tbody>{{vt_yas_dagilimi}}</tbody></table></div><div class="col-md-6 col-lg-4"><table class="table"><caption>Seviye dağılımı</caption><tbody>{{vt_seviye_dagilimi}}</tbody></table></div>
+				<div class="col-md-6 col-lg-4"><table class="table"><caption>Dal dağılımı</caption><tbody>{{vt_dal_dagilimi}}</tbody></table></div><div class="col-md-6 col-lg-4"><table class="table"><caption>Memnuniyet</caption><tbody>{{vt_memnuniyet}}</tbody></table></div><div class="col-md-6 col-lg-4"><table class="table"><caption>Eser sayısı</caption><tbody>{{vt_eser_dal}}</tbody></table></div>
+				<div class="col-md-6 col-lg-4"><table class="table"><caption>Açılan sergi</caption><tbody>{{vt_sergi_yillik}}</tbody></table></div><div class="col-md-6 col-lg-4"><table class="table"><caption>Aylık ziyaretçi (2026)</caption><tbody>{{vt_aylik_ziyaret}}</tbody></table></div>
+			</div>
+		</details>
+		<p class="rakam-not">Bu sayfadaki veriler tasarım amacıyla hazırlanmış örnek verilerdir.</p>
+	</div>
+</section>
+<script type="application/json" id="istatistik-veri">{{istatistik_json}}</script>
+<script src="{{root}}assets/js/vendor/chart.umd.js"></script>
+<script src="{{root}}assets/js/grafikler.js"></script>

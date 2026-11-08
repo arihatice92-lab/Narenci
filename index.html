@@ -43,11 +43,12 @@
 <li><a href="hakkimizda.html">Hakkımızda</a></li>
 <li><a href="misyon-vizyon.html">Misyon-Vizyon</a></li>
 <li><a href="duyurular.html">Duyurular</a></li>
+<li><a href="rakamlarla-narenci.html">Rakamlarla</a></li>
 <li><a href="iletisim.html">İletişim</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div class="col-20 d-none d-xl-block text-end align-self-center">
+				<div class="col-20 d-none d-xxl-block text-end align-self-center">
 					<a href="admin/giris.html" class="header-btn">Yönetim</a>
 					<a href="atolyeler.html" class="btn_one">Ön Kayıt</a>
 				</div>
@@ -58,6 +59,7 @@
 <li><a href="hakkimizda.html">Hakkımızda</a></li>
 <li><a href="misyon-vizyon.html">Misyon-Vizyon</a></li>
 <li><a href="duyurular.html">Duyurular</a></li>
+<li><a href="rakamlarla-narenci.html">Rakamlarla</a></li>
 <li><a href="iletisim.html">İletişim</a></li>
 				</ul>
 			</div>
@@ -151,6 +153,7 @@
 			<div class="col-12"><figure class="grafik-kart"><figcaption>2026 yılı aylık Sergi Salonu ziyaretçi sayısı</figcaption>
 				<div class="grafik-kutu alcak"><canvas id="g-ziyaret" role="img" aria-label="Ocak-Ekim 2026 aylık ziyaretçi sayısı; en yüksek değer Ekim ayında 840"></canvas></div></figure></div>
 		</div>
+		<p class="text-center" style="margin-top:8px"><a class="btn_one" href="rakamlarla-narenci.html">Tüm rakamları gör</a></p>
 		<details class="veri-tablosu">
 			<summary>Grafik verilerini tablo olarak göster</summary>
 			<div class="row">
@@ -161,7 +164,7 @@
 		</details>
 	</div>
 </section>
-<script type="application/json" id="istatistik-veri">{"sayaclar": {"eser": 320, "atolye": 48, "egitmen": 26, "katilimci": 1250}, "yillik_katilimci": {"etiketler": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"], "degerler": [45, 110, 260, 430, 690, 910, 1090, 1250]}, "dal_dagilimi": {"etiketler": ["Resim", "Seramik", "Heykel"], "degerler": [34, 43, 23]}, "aylik_ziyaret": {"etiketler": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki"], "degerler": [420, 380, 510, 640, 720, 560, 480, 450, 690, 840]}, "aylik_on_kayit": {"etiketler": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki"], "degerler": [12, 9, 18, 25, 22, 14, 10, 8, 31, 44]}}</script>
+<script type="application/json" id="istatistik-veri">{"sayaclar": {"eser": 320, "atolye": 48, "egitmen": 26, "katilimci": 1250, "sergi": 65, "ziyaretci": 5690}, "yillik_katilimci": {"etiketler": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"], "degerler": [45, 110, 260, 430, 690, 910, 1090, 1250]}, "dal_dagilimi": {"etiketler": ["Resim", "Seramik", "Heykel"], "degerler": [34, 43, 23]}, "aylik_ziyaret": {"etiketler": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki"], "degerler": [420, 380, 510, 640, 720, 560, 480, 450, 690, 840]}, "aylik_on_kayit": {"etiketler": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki"], "degerler": [12, 9, 18, 25, 22, 14, 10, 8, 31, 44]}, "sergi_yillik": {"etiketler": ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"], "degerler": [3, 4, 5, 7, 9, 11, 12, 14]}, "eser_dal": {"etiketler": ["Resim", "Seramik", "Heykel"], "degerler": [118, 124, 78]}, "yas_dagilimi": {"etiketler": ["8–14", "15–24", "25–34", "35–49", "50+"], "degerler": [12, 26, 31, 21, 10]}, "seviye_dagilimi": {"etiketler": ["Başlangıç", "Orta", "İleri"], "degerler": [52, 30, 18]}, "memnuniyet": {"etiketler": ["Eğitmen ilgisi", "Atölye ortamı", "Sergi Salonu", "Malzeme kalitesi", "Fiyat / değer"], "degerler": [94, 91, 89, 87, 82]}}</script>
 <script src="assets/js/vendor/chart.umd.js"></script>
 <script src="assets/js/grafikler.js"></script>
 
@@ -278,7 +281,9 @@ window.addEventListener('load', function () {
 							<li><a href="hakkimizda.html">Hakkımızda</a></li>
 							<li><a href="misyon-vizyon.html">Misyon-Vizyon</a></li>
 							<li><a href="duyurular.html">Duyurular</a></li>
+							<li><a href="rakamlarla-narenci.html">Rakamlarla Narenci</a></li>
 							<li><a href="egitmenler.html">Eğitmenlerimiz</a></li>
+							<li><a href="admin/giris.html">Yönetim Paneli</a></li>
 							<li><a href="iletisim.html">İletişim</a></li>
 						</ul>
 					</div>
